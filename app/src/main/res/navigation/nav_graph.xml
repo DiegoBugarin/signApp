@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/homeFragment2">
 
     <fragment
-        android:id="@+id/homeFragment"
+        android:id="@+id/homeFragment2"
         android:name="diego.estrada.deersign.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />

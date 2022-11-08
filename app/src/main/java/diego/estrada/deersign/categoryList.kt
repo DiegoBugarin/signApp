@@ -65,35 +65,35 @@ var categoryList = mutableListOf(
         R.drawable.pronombres,
         "#fefb64"),
     category(
-        "PUESTOS",
-        R.drawable.comida,
+        "OFICIOS",
+        R.drawable.puestos,
         "#d68227"),
     category(
-        "COLORES",
-        R.drawable.colores,
+        "ROPA",
+        R.drawable.ropa,
         "#eea236"),
     category(
-        "ABC",
-        R.drawable.abc,
+        "SALUDOS",
+        R.drawable.saludos,
         "#42a5f5"),
     category(
-        "DEPORTES",
-        R.drawable.deportes,
+        "TIEMPO",
+        R.drawable.tiempo,
         "#92d36e"),
     category(
-        "COMIDA",
-        R.drawable.comida,
+        "TRANSPORTE",
+        R.drawable.transporte,
         "#ff5d55"),
     category(
-        "COLORES",
-        R.drawable.colores,
+        "VERBOS",
+        R.drawable.verbos,
         "#c238eb"),
     category(
-        "ABC",
-        R.drawable.abc,
+        "VERBOS NARRATIVOS",
+        R.drawable.verbos,
         "#929292"),
     category(
-        "DEPORTES",
-        R.drawable.deportes,
+        "VERDURAS",
+        R.drawable.verduras,
         "#fefb64"),
     )
