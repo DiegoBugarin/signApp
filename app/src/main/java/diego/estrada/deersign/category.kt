@@ -6,5 +6,6 @@ import android.graphics.drawable.Icon
 data class category (
     val nombre: String,
     val icono: Int,
-    val color: String
+    val color: String,
+    //val subcat: List<subCategorias>
         )

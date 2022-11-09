@@ -5,9 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.GridLayout
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import diego.estrada.deersign.databinding.FragmentDictionaryBinding
 import diego.estrada.deersign.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -17,11 +17,12 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
+ * Use the [DictionaryFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HomeFragment : Fragment() {
-    private var _binding: FragmentHomeBinding ?= null
+class DictionaryFragment : Fragment() {
+
+    private var _binding: FragmentDictionaryBinding?= null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -29,14 +30,14 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentDictionaryBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = dictionaryAdapter(categoryList)
+        val adapterModulo = homeAdapter(categoryList)
 
         binding.rvmodulos.adapter = adapterModulo
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)
