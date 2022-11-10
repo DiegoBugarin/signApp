@@ -3,11 +3,12 @@ package diego.estrada.deersign
 import android.graphics.Color
 import android.graphics.drawable.Icon
 
-var categoryList = mutableListOf(
+/*var categoryList = mutableListOf(
     category(
         "ABC",
         R.drawable.abc,
-        "#eea236"),
+        "#eea236",
+        ),
     category(
         "ANIMALES",
         R.drawable.animales,
@@ -31,7 +32,7 @@ var categoryList = mutableListOf(
     category(
         "FRUTAS",
         R.drawable.frutas,
-        "#fefb64"),
+        "#3CA99B"),
     category(
         "HOGAR",
         R.drawable.hogar,
@@ -63,7 +64,7 @@ var categoryList = mutableListOf(
     category(
         "PRONOMBRES",
         R.drawable.pronombres,
-        "#fefb64"),
+        "#3CA99B"),
     category(
         "OFICIOS",
         R.drawable.puestos,
@@ -95,5 +96,5 @@ var categoryList = mutableListOf(
     category(
         "VERDURAS",
         R.drawable.verduras,
-        "#fefb64"),
-    )
+        "#3CA99B"),
+    )*/

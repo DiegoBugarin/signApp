@@ -2,6 +2,7 @@ package diego.estrada.deersign
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupWithNavController
@@ -11,6 +12,7 @@ import diego.estrada.deersign.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     //lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         //binding = ActivityMainBinding.inflate(layoutInflater)
@@ -24,5 +26,15 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.fragmentContainerView)*/
 
         bottomNavView.setupWithNavController(navController)
+
+        navController.addOnDestinationChangedListener { _, destination, _ ->
+            if(destination.id == R.id.loginFragment) {
+
+                bottomNavView.visibility = View.GONE
+            } else {
+
+                bottomNavView.visibility = View.VISIBLE
+            }
+        }
     }
 }

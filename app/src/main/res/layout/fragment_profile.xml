@@ -86,28 +86,28 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/btnExit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:backgroundTint="#FFFFFF"
         android:src="@drawable/exit"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton5"
+        app:layout_constraintEnd_toStartOf="@+id/btnSecurity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5" />
+        app:layout_constraintTop_toTopOf="@+id/btnSecurity" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/btnEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         android:src="@drawable/edit"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
-        app:layout_constraintTop_toTopOf="@+id/imageButton5" />
+        app:layout_constraintStart_toEndOf="@+id/btnSecurity"
+        app:layout_constraintTop_toTopOf="@+id/btnSecurity" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnSecurity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
@@ -124,9 +124,9 @@
         android:text="EXIT"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton4"
-        app:layout_constraintStart_toStartOf="@+id/imageButton4"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
+        app:layout_constraintEnd_toEndOf="@+id/btnExit"
+        app:layout_constraintStart_toStartOf="@+id/btnExit"
+        app:layout_constraintTop_toBottomOf="@+id/btnExit" />
 
     <TextView
         android:id="@+id/textView4"
@@ -135,9 +135,9 @@
         android:text="SECURITY"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton5"
-        app:layout_constraintStart_toStartOf="@+id/imageButton5"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton5" />
+        app:layout_constraintEnd_toEndOf="@+id/btnSecurity"
+        app:layout_constraintStart_toStartOf="@+id/btnSecurity"
+        app:layout_constraintTop_toBottomOf="@+id/btnSecurity" />
 
     <TextView
         android:id="@+id/textView5"
@@ -146,9 +146,9 @@
         android:text="EDIT"
         android:textSize="18sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/imageButton6"
-        app:layout_constraintStart_toStartOf="@+id/imageButton6"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton6" />
+        app:layout_constraintEnd_toEndOf="@+id/btnEdit"
+        app:layout_constraintStart_toStartOf="@+id/btnEdit"
+        app:layout_constraintTop_toBottomOf="@+id/btnEdit" />
 
     <ProgressBar
         android:id="@+id/progressBar"

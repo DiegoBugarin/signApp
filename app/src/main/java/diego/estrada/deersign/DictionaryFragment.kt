@@ -37,7 +37,7 @@ class DictionaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = homeAdapter(categoryList)
+        val adapterModulo = homeAdapter(modulosLista)
 
         binding.rvmodulos.adapter = adapterModulo
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)

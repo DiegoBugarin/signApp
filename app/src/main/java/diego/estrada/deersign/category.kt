@@ -7,5 +7,5 @@ data class category (
     val nombre: String,
     val icono: Int,
     val color: String,
-    //val subcat: List<subCategorias>
+    val subcat: List<subCategorias>
         )

@@ -2,5 +2,6 @@ package diego.estrada.deersign
 
 data class subCategorias (
     val nombre: String,
-    val grupoVideos: List<word>
-        )
+    val color: String,
+    //val grupoVideos: List<word>
+    )

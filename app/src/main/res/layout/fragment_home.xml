@@ -75,13 +75,12 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvmodulos"
-        android:layout_width="381dp"
-        android:layout_height="469dp"
+        android:layout_width="378dp"
+        android:layout_height="522dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6"
-        />
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
