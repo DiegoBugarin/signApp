@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="421dp"
+        android:layout_height="86dp"
+        android:background="#629c44"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/toolbarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="0dp"
+            android:text="QUIZ"
+            android:textAppearance="@android:style/TextAppearance.WindowTitle"
+            android:textSize="30sp"
+            android:visibility="visible"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="18dp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <VideoView
+        android:id="@+id/videoView2"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Selecciona la palabra mostrada:"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar4" />
+
+    <Button
+        android:id="@+id/ansA"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/videoView2"
+        app:layout_constraintTop_toBottomOf="@+id/videoView2" />
+
+    <Button
+        android:id="@+id/ansC"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="@+id/ansA"
+        app:layout_constraintTop_toBottomOf="@+id/ansA" />
+
+    <Button
+        android:id="@+id/ansB"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/videoView2"
+        app:layout_constraintTop_toTopOf="@+id/ansA" />
+
+    <Button
+        android:id="@+id/ansD"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:text="Button"
+        app:layout_constraintEnd_toEndOf="@+id/ansB"
+        app:layout_constraintTop_toTopOf="@+id/ansC" />
+
+    <Button
+        android:id="@+id/pista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Pista"
+        android:textColor="#AAAAAA"
+        app:layout_constraintStart_toStartOf="@+id/videoView2"
+        app:layout_constraintTop_toBottomOf="@+id/videoView2"
+        app:strokeColor="#00FFFFFF" />
+
+    <ProgressBar
+        android:id="@+id/progressBar4"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="344dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="20dp"
+        android:scaleY="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

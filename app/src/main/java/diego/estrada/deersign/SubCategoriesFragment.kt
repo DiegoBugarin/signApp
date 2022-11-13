@@ -53,7 +53,7 @@ class SubCategoriesFragment : Fragment() {
                 subCategoriasAdapter(requireActivity(), categoria.subcat, categoria) {
                     val bundle = Bundle()
                     bundle.putParcelable("subCategoria", it)
-                    Navigation.findNavController(view).navigate(R.id.action_subCategoriesFragment_to_homeFragment,bundle)
+                    Navigation.findNavController(view).navigate(R.id.action_subCategoriesFragment_to_quizFragment,bundle)
                 }
             binding.rvsubcat.addItemDecoration( DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
             binding.rvsubcat.adapter = adapterCategoria
