@@ -1,11 +1,15 @@
 package diego.estrada.deersign
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentHomeBinding
 import diego.estrada.deersign.databinding.FragmentSubCategoriesBinding
@@ -36,9 +40,26 @@ class SubCategoriesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = subCategoriasAdapter(modulosLista[0])
+        arguments?.let{
+            val categoria = it.get("categoria") as category
 
-        binding.rvsubcat.adapter = adapterModulo
-        binding.rvsubcat.layoutManager = GridLayoutManager(requireActivity(), 1, RecyclerView.VERTICAL, false)
+            binding.toolbar.setBackgroundColor(Color.parseColor(categoria.color))
+            binding.toolbarTextView.setText(categoria.nombre)
+            binding.back.setOnClickListener{
+                Navigation.findNavController(view).navigate(R.id.action_subCategoriesFragment_to_homeFragment)
+            }
+
+            val adapterCategoria =
+                subCategoriasAdapter(requireActivity(), categoria.subcat, categoria) {
+                    val bundle = Bundle()
+                    bundle.putParcelable("subCategoria", it)
+                    Navigation.findNavController(view).navigate(R.id.action_subCategoriesFragment_to_quizFragment,bundle)
+                }
+            binding.rvsubcat.addItemDecoration( DividerItemDecoration(activity, LinearLayoutManager.VERTICAL))
+            binding.rvsubcat.adapter = adapterCategoria
+            binding.rvsubcat.layoutManager = GridLayoutManager(requireActivity(), 1, RecyclerView.VERTICAL, false)
+
+        }
+
     }
 }

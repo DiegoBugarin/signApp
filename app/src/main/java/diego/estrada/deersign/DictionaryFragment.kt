@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentDictionaryBinding
@@ -37,7 +38,11 @@ class DictionaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = homeAdapter(modulosLista)
+        val adapterModulo = homeAdapter(requireActivity(), modulosLista){
+            val bundle = Bundle()
+            bundle.putParcelable("moduloslista", it)
+            Navigation.findNavController(view).navigate(R.id.action_dictionaryFragment_to_homeFragment2, bundle)
+        }
 
         binding.rvmodulos.adapter = adapterModulo
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)
