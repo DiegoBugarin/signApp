@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_dictionaryFragment_to_homeFragment2"
             app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_dictionaryFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment" />
     </fragment>
     <fragment
         android:id="@+id/splahFragment"
@@ -70,29 +73,26 @@
         <action
             android:id="@+id/action_subCategoriesFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_subCategoriesFragment_to_quizFragment"
-            app:destination="@id/quizFragment" />
     </fragment>
     <fragment
-        android:id="@+id/quizFragment"
-        android:name="diego.estrada.deersign.QuizFragment"
-        android:label="fragment_quiz"
-        tools:layout="@layout/fragment_quiz" >
+        android:id="@+id/vocabularyFragment"
+        android:name="diego.estrada.deersign.VocabularyFragment"
+        android:label="fragment_vocabulary"
+        tools:layout="@layout/fragment_vocabulary" >
         <action
-            android:id="@+id/action_quizFragment_to_finishedFragment"
-            app:destination="@id/finishedFragment" />
+            android:id="@+id/action_vocabularyFragment_to_dictionaryFragment"
+            app:destination="@id/dictionaryFragment" />
         <action
-            android:id="@+id/action_quizFragment_self"
-            app:destination="@id/quizFragment" />
+            android:id="@+id/action_vocabularyFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
     </fragment>
     <fragment
-        android:id="@+id/finishedFragment"
-        android:name="diego.estrada.deersign.FinishedFragment"
-        android:label="fragment_finished"
-        tools:layout="@layout/fragment_finished" >
+        android:id="@+id/wordFragment"
+        android:name="diego.estrada.deersign.WordFragment"
+        android:label="fragment_word"
+        tools:layout="@layout/fragment_word" >
         <action
-            android:id="@+id/action_finishedFragment_to_subCategoriesFragment"
-            app:destination="@id/subCategoriesFragment" />
+            android:id="@+id/action_wordFragment_to_vocabularyFragment"
+            app:destination="@id/vocabularyFragment" />
     </fragment>
 </navigation>
