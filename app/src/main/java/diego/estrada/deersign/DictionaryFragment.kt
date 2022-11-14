@@ -38,13 +38,15 @@ class DictionaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = homeAdapter(requireActivity(), modulosLista){
+        val adaptercategoria = dictionaryAdapter(requireActivity(), modulosLista){
             val bundle = Bundle()
-            bundle.putParcelable("moduloslista", it)
-            Navigation.findNavController(view).navigate(R.id.action_dictionaryFragment_to_homeFragment2, bundle)
+            bundle.putParcelable("categoria",it)
+            Navigation.findNavController(view).navigate(R.id.action_dictionaryFragment_to_vocabularyFragment,bundle)
         }
 
-        binding.rvmodulos.adapter = adapterModulo
+
+
+        binding.rvmodulos.adapter = adaptercategoria
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)
     }
 

@@ -3,6 +3,8 @@ package diego.estrada.deersign
 
 import android.graphics.Color
 import android.graphics.drawable.Icon
+import android.util.Log.d
+import android.util.Log.e
 
 var modulosLista = mutableListOf(
     category(
@@ -12,141 +14,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
     ),
@@ -157,141 +169,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -302,141 +324,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -447,141 +479,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -592,141 +634,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -737,141 +789,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -882,141 +944,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1027,141 +1099,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1172,141 +1254,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1317,141 +1409,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1462,141 +1564,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1607,141 +1719,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1752,141 +1874,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -1897,141 +2029,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2042,141 +2184,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2187,141 +2339,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2332,141 +2494,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
     ),
@@ -2477,141 +2649,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2622,141 +2804,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2767,141 +2959,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -2912,141 +3114,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -3057,141 +3269,151 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
+            ),
+        ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
             ),
         )
         ),
@@ -3202,142 +3424,152 @@ var modulosLista = mutableListOf(
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC II",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
             subCategorias(
                 "ABC III",
-                "#eea236",
+                "eea236",
                 mutableListOf(
                     word(
                         "A",
-                        "/A"
+                        R.raw.a
                     ),
                     word(
                         "B",
-                        "/A"
+                        R.raw.b
                     ),
                     word(
                         "C",
-                        "/A"
+                        R.raw.c
                     ),
                     word(
                         "D",
-                        "/A"
+                        R.raw.d
                     ),
                     word(
                         "E",
-                        "/A"
+                        R.raw.e
                     ),
                     word(
                         "F",
-                        "/A"
+                        R.raw.f
                     ),
                     word(
                         "G",
-                        "/A"
+                        R.raw.g
                     ),
                     word(
                         "H",
-                        "/A"
+                        R.raw.h
                     ),
-                    word(
-                        "I",
-                        "/A"
-                    ),
-                    word(
-                        "J",
-                        "/A"
-                    )
                 )
             ),
-        )
         ),
+        mutableListOf(
+            word(
+                "A",
+                R.raw.a
+            ),
+            word(
+                "B",
+                R.raw.b
+            ),
+            word(
+                "C",
+                R.raw.c
+            ),
+            word(
+                "D",
+                R.raw.d
+            ),
+            word(
+                "E",
+                R.raw.e
+            ),
+            word(
+                "F",
+                R.raw.f
+            ),
+            word(
+                "G",
+                R.raw.g
+            ),
+            word(
+                "H",
+                R.raw.h
+            ),
+        )
+)
 )

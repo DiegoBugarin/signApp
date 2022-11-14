@@ -10,29 +10,26 @@ import diego.estrada.deersign.databinding.ItemCategoriaBinding
 import diego.estrada.deersign.databinding.ItemSubCategoriaBinding
 import java.util.Locale.Category
 
-class subCategoriasAdapter(var context: Context, var data: List<subCategorias>, var categoria: category, val funcionX: (subCategorias) -> Unit) : RecyclerView.Adapter<subCategoriasAdapter.ViewHolder>() {
+class subCategoriasAdapter(var cat: category) : RecyclerView.Adapter<subCategoriasAdapter.ViewHolder>() {
 
-    class ViewHolder(val binding: ItemSubCategoriaBinding, funcionZ: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root){
+    lateinit var context: Context
+    var data: List<subCategorias> = cat.subcat
+    class ViewHolder(val binding: ItemSubCategoriaBinding) : RecyclerView.ViewHolder(binding.root){
 
-        init{
-            itemView.setOnClickListener{
-                funcionZ(adapterPosition)
-            }
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemSubCategoriaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(view){
-            funcionX(data[it])
-        }
+        context = parent.context
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         holder.binding.apply {
-            imageView.setImageResource(categoria.icono)
+            imageView.setImageResource(cat.icono)
             textView.text = data[position].nombre
-            root.setCardBackgroundColor(Color.parseColor(categoria.color))
+            root.setCardBackgroundColor(Color.parseColor(data[position].color))
         }
 
     }

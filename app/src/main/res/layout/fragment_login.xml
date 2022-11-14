@@ -33,8 +33,7 @@
             android:textColor="#AAAAAA"
             android:textColorHint="#AAAAAA"
             android:textSize="20sp"
-            android:textStyle="italic"
-            />
+            android:textStyle="italic" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -52,8 +51,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/email"
         app:layout_constraintTop_toBottomOf="@+id/email"
-        tools:ignore="MissingConstraints"
-        >
+        tools:ignore="MissingConstraints">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"

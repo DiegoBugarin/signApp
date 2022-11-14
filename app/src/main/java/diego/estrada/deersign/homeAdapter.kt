@@ -8,22 +8,17 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import diego.estrada.deersign.databinding.ItemCategoriaBinding
 
-class homeAdapter(var context: Context, var data:List<category>, private val funcionX: (category) -> Unit) : RecyclerView.Adapter<homeAdapter.ViewHolder>() {
+class homeAdapter(var data:List<category>) : RecyclerView.Adapter<homeAdapter.ViewHolder>() {
 
+    lateinit var context: Context
+    class ViewHolder(val binding: ItemCategoriaBinding) : RecyclerView.ViewHolder(binding.root){
 
-    class ViewHolder(val binding: ItemCategoriaBinding, funcionZ: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root){
-        init{
-            itemView.setOnClickListener{
-                funcionZ(adapterPosition)
-            }
-        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemCategoriaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return ViewHolder(view){
-            funcionX(data[it])
-        }
+        context = parent.context
+        return ViewHolder(view)
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

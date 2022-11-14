@@ -1,10 +1,10 @@
 package diego.estrada.deersign
 
 import android.os.Parcelable
-import kotlinx.android.parcel.Parcelize
+import kotlinx.parcelize.Parcelize
 
 @Parcelize
 data class word (
     val nombre: String,
-    val source_path: String
-):Parcelable
+    val source_path: Int?
+): Parcelable
