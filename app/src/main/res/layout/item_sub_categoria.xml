@@ -30,10 +30,9 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="95dp"
-            android:layout_height="47dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
-            android:text="ABC I"
             android:textColor="#FFFFFF"
             android:textSize="35sp"
             android:textStyle="bold"

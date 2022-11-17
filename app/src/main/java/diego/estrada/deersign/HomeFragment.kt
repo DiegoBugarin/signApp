@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.GridLayout
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentHomeBinding
@@ -36,9 +37,13 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = homeAdapter(modulosLista)
+        val adaptercategoria = homeAdapter(requireActivity(), modulosLista){
+            val bundle = Bundle()
+            bundle.putParcelable("categoria",it)
+            Navigation.findNavController(view).navigate(R.id.action_homeFragment_to_subCategoriesFragment,bundle)
+        }
 
-        binding.rvmodulos.adapter = adapterModulo
+        binding.rvmodulos.adapter = adaptercategoria
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)
     }
 

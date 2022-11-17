@@ -35,7 +35,7 @@
             android:gravity="center"
             android:maxLines="1"
             android:paddingLeft="10dp"
-            android:text="DEER SIGN"
+            android:text="MAJOR SIGN"
             android:textAppearance="@android:style/TextAppearance.WindowTitle"
             android:textSize="30sp"
             android:visibility="visible"

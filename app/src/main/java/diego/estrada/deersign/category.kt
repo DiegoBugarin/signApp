@@ -10,6 +10,6 @@ data class category (
     val nombre: String,
     val icono: Int,
     val color: String,
-    val subcat: List<subCategorias>,
-    val words: List<word>
+    val subcat: MutableList<subCategorias>,
+    val words: MutableList<word>
         ): Parcelable

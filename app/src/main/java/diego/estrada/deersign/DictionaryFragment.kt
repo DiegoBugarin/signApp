@@ -1,15 +1,14 @@
 package diego.estrada.deersign
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentDictionaryBinding
-import diego.estrada.deersign.databinding.FragmentHomeBinding
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -43,7 +42,6 @@ class DictionaryFragment : Fragment() {
             bundle.putParcelable("categoria",it)
             Navigation.findNavController(view).navigate(R.id.action_dictionaryFragment_to_vocabularyFragment,bundle)
         }
-
 
 
         binding.rvmodulos.adapter = adaptercategoria

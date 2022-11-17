@@ -1,10 +1,12 @@
 package diego.estrada.deersign
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentHomeBinding
@@ -21,7 +23,7 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class SubCategoriesFragment : Fragment() {
-    private var _binding: FragmentSubCategoriesBinding?= null
+    private var _binding: FragmentSubCategoriesBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -36,9 +38,26 @@ class SubCategoriesFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val adapterModulo = subCategoriasAdapter(modulosLista[0])
+        arguments?.let {
+            val categoria = it.get("categoria") as category
+            binding.toolbar.setBackgroundColor(Color.parseColor(categoria.color))
+            binding.toolbarTextView.setText(categoria.nombre)
 
-        binding.rvsubcat.adapter = adapterModulo
-        binding.rvsubcat.layoutManager = GridLayoutManager(requireActivity(), 1, RecyclerView.VERTICAL, false)
+            val subCatAdapter =
+                subCategoriasAdapter(requireActivity(), categoria, categoria.subcat) {
+                    val bundle = Bundle()
+                    bundle.putParcelable("categoria", categoria)
+                    bundle.putParcelable("subCat", it)
+                    Navigation.findNavController(view)
+                        .navigate(R.id.action_subCategoriesFragment_to_quizFragment, bundle)
+                }
+            binding.backBtn.setOnClickListener {
+                Navigation.findNavController(view)
+                    .navigate(R.id.action_subCategoriesFragment_to_homeFragment)
+            }
+            binding.rvsubcat.adapter = subCatAdapter
+            binding.rvsubcat.layoutManager =
+                GridLayoutManager(requireActivity(), 1, RecyclerView.VERTICAL, false)
+        }
     }
 }

@@ -7,5 +7,5 @@ import kotlinx.parcelize.Parcelize
 data class subCategorias (
     val nombre: String,
     val color: String,
-    val grupoVideos: List<word>
+    val grupoVideos: MutableList<word>
     ): Parcelable
