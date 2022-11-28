@@ -3,3573 +3,6653 @@ package diego.estrada.deersign
 
 import android.graphics.Color
 import android.graphics.drawable.Icon
-import android.util.Log.d
-import android.util.Log.e
+import android.util.Log.*
 
 var modulosLista = mutableListOf(
     category(
         "ABC",
         R.drawable.abc,
         "#eea236",
+
         mutableListOf(
             subCategorias(
                 "ABC I",
-                "eea236",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABEJA",
+                        R.raw.abeja
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGUILA",
+                        R.raw.aguila
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ARANA",
+                        R.raw.arana
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ARDILLA",
+                        R.raw.ardilla
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "BURRO",
+                        R.raw.burro
+
                     ),
                 )
             ),
             subCategorias(
                 "ABC II",
-                "eea236",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABEJA",
+                        R.raw.abeja
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGUILA",
+                        R.raw.aguila
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ARANA",
+                        R.raw.arana
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ARDILLA",
+                        R.raw.ardilla
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "BURRO",
+                        R.raw.burro
+
                     ),
                 )
             ),
             subCategorias(
                 "ABC III",
-                "eea236",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABEJA",
+                        R.raw.abeja
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGUILA",
+                        R.raw.aguila
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ARANA",
+                        R.raw.arana
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ARDILLA",
+                        R.raw.ardilla
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "BURRO",
+                        R.raw.burro
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "ABC IV",
+                "#eea236",
+
+                mutableListOf(
+                    word(
+                        "ABEJA",
+                        R.raw.abeja
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "AGUILA",
+                        R.raw.aguila
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "ARANA",
+                        R.raw.arana
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "ARDILLA",
+                        R.raw.ardilla
+
+                    ),
+                    word(
+                        "BURRO",
+                        R.raw.burro
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "ABC V",
+                "#eea236",
+
+                mutableListOf(
+                    word(
+                        "ABEJA",
+                        R.raw.abeja
+
+                    ),
+                    word(
+                        "AGUILA",
+                        R.raw.aguila
+
+                    ),
+                    word(
+                        "ARANA",
+                        R.raw.arana
+
+                    ),
+                    word(
+                        "ARDILLA",
+                        R.raw.ardilla
+
+                    ),
+                    word(
+                        "BURRO",
+                        R.raw.burro
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABEJA",
+                R.raw.abeja
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AGUILA",
+                R.raw.aguila
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ARANA",
+                R.raw.arana
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ARDILLA",
+                R.raw.ardilla
+
             ),
             word(
-                "E",
-                R.raw.e
+                "BURRO",
+                R.raw.burro
+
             ),
-            word(
-                "F",
-                R.raw.f
-            ),
-            word(
-                "G",
-                R.raw.g
-            ),
-            word(
-                "H",
-                R.raw.h
-            ),
-        )
-    ),
+        ),
+        5,
+
+        ),
     category(
         "ANIMALES",
         R.drawable.animales,
         "#42a5f5",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "ANIMALES I",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABEJA",
+                        R.raw.abeja
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGUILA",
+                        R.raw.aguila
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ARANA",
+                        R.raw.arana
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ARDILLA",
+                        R.raw.ardilla
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "BURRO",
+                        R.raw.burro
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "ANIMALES II",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CABALLO",
+                        R.raw.caballo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CERDO",
+                        R.raw.cerdo
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CHANGO",
+                        R.raw.chango
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CONEJO",
+                        R.raw.conejo
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "GATO",
+                        R.raw.gato
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "ANIMALES III",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "GORILA",
+                        R.raw.gorila
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "GUSANO",
+                        R.raw.gusano
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "JIRAFA",
+                        R.raw.jirafa
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "LEON",
+                        R.raw.leon
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "MARIPOSA",
+                        R.raw.mariposa
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "ANIMALES IV",
+                "#42a5f5",
+
+                mutableListOf(
+                    word(
+                        "OSO",
+                        R.raw.oso
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "PAJARO",
+                        R.raw.pajaro
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "PALOMA",
+                        R.raw.paloma
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "PATO",
+                        R.raw.pato
+
+                    ),
+                    word(
+                        "PERRO",
+                        R.raw.perro
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "ANIMALES V",
+                "#42a5f5",
+
+                mutableListOf(
+                    word(
+                        "PEZ",
+                        R.raw.pez
+
+                    ),
+                    word(
+                        "RATON",
+                        R.raw.raton
+
+                    ),
+                    word(
+                        "TIGRE",
+                        R.raw.tigre
+
+                    ),
+                    word(
+                        "TORO",
+                        R.raw.toro
+
+                    ),
+                    word(
+                        "TORTUGA",
+                        R.raw.tortuga
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABEJA",
+                R.raw.abeja
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AGUILA",
+                R.raw.aguila
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ARANA",
+                R.raw.arana
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ARDILLA",
+                R.raw.ardilla
+
             ),
             word(
-                "E",
-                R.raw.e
+                "BURRO",
+                R.raw.burro
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CABALLO",
+                R.raw.caballo
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CERDO",
+                R.raw.cerdo
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CHANGO",
+                R.raw.chango
+
             ),
-        )
+            word(
+                "CONEJO",
+                R.raw.conejo
+
+            ),
+            word(
+                "GATO",
+                R.raw.gato
+
+            ),
+            word(
+                "GORILA",
+                R.raw.gorila
+
+            ),
+            word(
+                "GUSANO",
+                R.raw.gusano
+
+            ),
+            word(
+                "JIRAFA",
+                R.raw.jirafa
+
+            ),
+            word(
+                "LEON",
+                R.raw.leon
+
+            ),
+            word(
+                "MARIPOSA",
+                R.raw.mariposa
+
+            ),
+            word(
+                "OSO",
+                R.raw.oso
+
+            ),
+            word(
+                "PAJARO",
+                R.raw.pajaro
+
+            ),
+            word(
+                "PALOMA",
+                R.raw.paloma
+
+            ),
+            word(
+                "PATO",
+                R.raw.pato
+
+            ),
+            word(
+                "PERRO",
+                R.raw.perro
+
+            ),
+            word(
+                "PEZ",
+                R.raw.pez
+
+            ),
+            word(
+                "RATON",
+                R.raw.raton
+
+            ),
+            word(
+                "TIGRE",
+                R.raw.tigre
+
+            ),
+            word(
+                "TORO",
+                R.raw.toro
+
+            ),
+            word(
+                "TORTUGA",
+                R.raw.tortuga
+
+            ),
+            word(
+                "VACA",
+                R.raw.vaca
+
+            ),
+            word(
+                "VIBORA",
+                R.raw.vibora
+
+            ),
+        ),
+        5,
+
         ),
     category(
         "COLORES",
         R.drawable.colores,
         "#92d36e",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "COLORES I",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AMARILLO",
+                        R.raw.amarillo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AZUL",
+                        R.raw.azul
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BLANCO",
+                        R.raw.blanco
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CAFE",
+                        R.raw.cafe
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "GRIS",
+                        R.raw.gris
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "COLORES II",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "MORADO",
+                        R.raw.morado
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "NARANJA",
+                        R.raw.naranja
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "NEGRO",
+                        R.raw.negro
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ORO",
+                        R.raw.oro
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "PLATA",
+                        R.raw.plata
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "AMARILLO",
+                R.raw.amarillo
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AZUL",
+                R.raw.azul
+
             ),
             word(
-                "C",
-                R.raw.c
+                "BLANCO",
+                R.raw.blanco
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CAFE",
+                R.raw.cafe
+
             ),
             word(
-                "E",
-                R.raw.e
+                "GRIS",
+                R.raw.gris
+
             ),
             word(
-                "F",
-                R.raw.f
+                "MORADO",
+                R.raw.morado
+
             ),
             word(
-                "G",
-                R.raw.g
+                "NARANJA",
+                R.raw.naranja
+
             ),
             word(
-                "H",
-                R.raw.h
+                "NEGRO",
+                R.raw.negro
+
             ),
-        )
+            word(
+                "ORO",
+                R.raw.oro
+
+            ),
+            word(
+                "PLATA",
+                R.raw.plata
+
+            ),
+            word(
+                "ROJO",
+                R.raw.rojo
+
+            ),
+            word(
+                "ROSA",
+                R.raw.rosa
+
+            ),
+            word(
+                "VERDE",
+                R.raw.verde
+
+            ),
+        ),
+        2,
+
         ),
     category(
         "COMIDA",
         R.drawable.comida,
         "#ff5d55",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "COMIDA I",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ACEITE",
+                        R.raw.aceite
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGUA",
+                        R.raw.agua
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ARROZ",
+                        R.raw.arroz
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "AZUCAR",
+                        R.raw.azucar
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CAFE",
+                        R.raw.cafe
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "COMIDA II",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CALDO",
+                        R.raw.caldo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CARNE",
+                        R.raw.carne
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CERVEZA",
+                        R.raw.cerveza
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CHILE",
+                        R.raw.chile
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CHOCOLATE",
+                        R.raw.chocolate
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "COMIDA III",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "COCACOLA",
+                        R.raw.cocacola
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "DULCE",
+                        R.raw.dulce
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ENSALADA",
+                        R.raw.ensalada
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "FRIJOL",
+                        R.raw.frijol
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "FRUTA",
+                        R.raw.fruta
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "COMIDA IV",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "GALLETA",
+                        R.raw.galleta
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "HAMBURGUESA",
+                        R.raw.hamburguesa
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "HUEVO",
+                        R.raw.huevo
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "LECHE",
+                        R.raw.leche
+
+                    ),
+                    word(
+                        "PAN",
+                        R.raw.pan
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "COMIDA V",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "PASTEL",
+                        R.raw.pastel
+
+                    ),
+                    word(
+                        "PESCADO",
+                        R.raw.pescado
+
+                    ),
+                    word(
+                        "PIZZA",
+                        R.raw.pizza
+
+                    ),
+                    word(
+                        "POLLO",
+                        R.raw.pollo
+
+                    ),
+                    word(
+                        "QUESO",
+                        R.raw.queso
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "COMIDA VI",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "REFRESCO",
+                        R.raw.refresco
+
+                    ),
+                    word(
+                        "SOPA",
+                        R.raw.sopa
+
+                    ),
+                    word(
+                        "TACO",
+                        R.raw.taco
+
+                    ),
+                    word(
+                        "TORTILLA",
+                        R.raw.tortilla
+
+                    ),
+                    word(
+                        "VERDURA",
+                        R.raw.verdura
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ACEITE",
+                R.raw.aceite
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AGUA",
+                R.raw.agua
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ARROZ",
+                R.raw.arroz
+
             ),
             word(
-                "D",
-                R.raw.d
+                "AZUCAR",
+                R.raw.azucar
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CAFE",
+                R.raw.cafe
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CALDO",
+                R.raw.caldo
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CARNE",
+                R.raw.carne
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CERVEZA",
+                R.raw.cerveza
+
             ),
-        )
+            word(
+                "CHILE",
+                R.raw.chile
+
+            ),
+            word(
+                "CHOCOLATE",
+                R.raw.chocolate
+
+            ),
+            word(
+                "COCACOLA",
+                R.raw.cocacola
+
+            ),
+            word(
+                "DULCE",
+                R.raw.dulce
+
+            ),
+            word(
+                "ENSALADA",
+                R.raw.ensalada
+
+            ),
+            word(
+                "FRIJOL",
+                R.raw.frijol
+
+            ),
+            word(
+                "FRUTA",
+                R.raw.fruta
+
+            ),
+            word(
+                "GALLETA",
+                R.raw.galleta
+
+            ),
+            word(
+                "HAMBURGUESA",
+                R.raw.hamburguesa
+
+            ),
+            word(
+                "HUEVO",
+                R.raw.huevo
+
+            ),
+            word(
+                "LECHE",
+                R.raw.leche
+
+            ),
+            word(
+                "PAN",
+                R.raw.pan
+
+            ),
+            word(
+                "PASTEL",
+                R.raw.pastel
+
+            ),
+            word(
+                "PESCADO",
+                R.raw.pescado
+
+            ),
+            word(
+                "PIZZA",
+                R.raw.pizza
+
+            ),
+            word(
+                "POLLO",
+                R.raw.pollo
+
+            ),
+            word(
+                "QUESO",
+                R.raw.queso
+
+            ),
+            word(
+                "REFRESCO",
+                R.raw.refresco
+
+            ),
+            word(
+                "SOPA",
+                R.raw.sopa
+
+            ),
+            word(
+                "TACO",
+                R.raw.taco
+
+            ),
+            word(
+                "TORTILLA",
+                R.raw.tortilla
+
+            ),
+            word(
+                "VERDURA",
+                R.raw.verdura
+
+            ),
+        ),
+        6,
+
         ),
     category(
         "CUERPO",
         R.drawable.cuerpo,
         "#c238eb",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "CUERPO I",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "BOCA",
+                        R.raw.boca
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CABEZA",
+                        R.raw.cabeza
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CARA",
+                        R.raw.cara
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CEJAS",
+                        R.raw.cejas
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CORAZON",
+                        R.raw.corazon
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "CUERPO II",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ESTOMAGO",
+                        R.raw.estomago
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "HUESO",
+                        R.raw.hueso
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "MANO",
+                        R.raw.mano
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "NARIZ",
+                        R.raw.nariz
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "OJOS",
+                        R.raw.ojos
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "CUERPO III",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "OREJA",
+                        R.raw.oreja
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "PESTANAS",
+                        R.raw.pestanas
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "PIEL",
+                        R.raw.piel
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "PIES",
+                        R.raw.pies
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "SANGRE",
+                        R.raw.sangre
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "BOCA",
+                R.raw.boca
+
             ),
             word(
-                "B",
-                R.raw.b
+                "CABEZA",
+                R.raw.cabeza
+
             ),
             word(
-                "C",
-                R.raw.c
+                "CARA",
+                R.raw.cara
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CEJAS",
+                R.raw.cejas
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CORAZON",
+                R.raw.corazon
+
             ),
             word(
-                "F",
-                R.raw.f
+                "ESTOMAGO",
+                R.raw.estomago
+
             ),
             word(
-                "G",
-                R.raw.g
+                "HUESO",
+                R.raw.hueso
+
             ),
             word(
-                "H",
-                R.raw.h
+                "MANO",
+                R.raw.mano
+
             ),
-        )
+            word(
+                "NARIZ",
+                R.raw.nariz
+
+            ),
+            word(
+                "OJOS",
+                R.raw.ojos
+
+            ),
+            word(
+                "OREJA",
+                R.raw.oreja
+
+            ),
+            word(
+                "PESTANAS",
+                R.raw.pestanas
+
+            ),
+            word(
+                "PIEL",
+                R.raw.piel
+
+            ),
+            word(
+                "PIES",
+                R.raw.pies
+
+            ),
+            word(
+                "SANGRE",
+                R.raw.sangre
+
+            ),
+        ),
+        3,
+
         ),
     category(
-        "DÍAS",
+        "DIAS",
         R.drawable.dias,
         "#929292",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "DIAS I",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "DOMINGO",
+                        R.raw.domingo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "JUEVES",
+                        R.raw.jueves
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "LUNES",
+                        R.raw.lunes
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "MARTES",
+                        R.raw.martes
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC II",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "MIERCOLES",
+                        R.raw.miercoles
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "DOMINGO",
+                R.raw.domingo
+
             ),
             word(
-                "B",
-                R.raw.b
+                "JUEVES",
+                R.raw.jueves
+
             ),
             word(
-                "C",
-                R.raw.c
+                "LUNES",
+                R.raw.lunes
+
             ),
             word(
-                "D",
-                R.raw.d
+                "MARTES",
+                R.raw.martes
+
             ),
             word(
-                "E",
-                R.raw.e
+                "MIERCOLES",
+                R.raw.miercoles
+
             ),
             word(
-                "F",
-                R.raw.f
+                "SABADO",
+                R.raw.sabado
+
             ),
             word(
-                "G",
-                R.raw.g
+                "VIERNES",
+                R.raw.viernes
+
             ),
-            word(
-                "H",
-                R.raw.h
-            ),
-        )
+        ),
+        1,
+
         ),
     category(
         "FRUTAS",
         R.drawable.frutas,
         "#3CA99B",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "FRUTAS I",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ALMENDRA",
+                        R.raw.almendra
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CEREZA",
+                        R.raw.cereza
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "COCO",
+                        R.raw.coco
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "DURAZNO",
+                        R.raw.durazno
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "FRESA",
+                        R.raw.fresa
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "FRUTAS II",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "GUAYABA",
+                        R.raw.guayaba
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "JAMAICA",
+                        R.raw.jamaica
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "JICAMA",
+                        R.raw.jicama
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "LIMON",
+                        R.raw.limon
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "MANGO",
+                        R.raw.mango
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "FRUTAS III",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "MANZANA",
+                        R.raw.manzana
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "MELON",
+                        R.raw.melon
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "NARANJA",
+                        R.raw.naranja
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "NUEZ",
+                        R.raw.nuez
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "PAPAYA",
+                        R.raw.papaya
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "FRUTAS IV",
+                "#3CA99B",
+
+                mutableListOf(
+                    word(
+                        "PERA",
+                        R.raw.pera
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "PINA",
+                        R.raw.pina
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "PLATANO",
+                        R.raw.platano
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "SANDIA",
+                        R.raw.sandia
+
+                    ),
+                    word(
+                        "TAMARINDO",
+                        R.raw.tamarindo
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ALMENDRA",
+                R.raw.almendra
+
             ),
             word(
-                "B",
-                R.raw.b
+                "CEREZA",
+                R.raw.cereza
+
             ),
             word(
-                "C",
-                R.raw.c
+                "COCO",
+                R.raw.coco
+
             ),
             word(
-                "D",
-                R.raw.d
+                "DURAZNO",
+                R.raw.durazno
+
             ),
             word(
-                "E",
-                R.raw.e
+                "FRESA",
+                R.raw.fresa
+
             ),
             word(
-                "F",
-                R.raw.f
+                "GUAYABA",
+                R.raw.guayaba
+
             ),
             word(
-                "G",
-                R.raw.g
+                "JAMAICA",
+                R.raw.jamaica
+
             ),
             word(
-                "H",
-                R.raw.h
+                "JICAMA",
+                R.raw.jicama
+
             ),
-        )
+            word(
+                "LIMON",
+                R.raw.limon
+
+            ),
+            word(
+                "MANGO",
+                R.raw.mango
+
+            ),
+            word(
+                "MANZANA",
+                R.raw.manzana
+
+            ),
+            word(
+                "MELON",
+                R.raw.melon
+
+            ),
+            word(
+                "NARANJA",
+                R.raw.naranja
+
+            ),
+            word(
+                "NUEZ",
+                R.raw.nuez
+
+            ),
+            word(
+                "PAPAYA",
+                R.raw.papaya
+
+            ),
+            word(
+                "PERA",
+                R.raw.pera
+
+            ),
+            word(
+                "PINA",
+                R.raw.pina
+
+            ),
+            word(
+                "PLATANO",
+                R.raw.platano
+
+            ),
+            word(
+                "SANDIA",
+                R.raw.sandia
+
+            ),
+            word(
+                "TAMARINDO",
+                R.raw.tamarindo
+
+            ),
+            word(
+                "TORONJA",
+                R.raw.toronja
+
+            ),
+            word(
+                "UVA",
+                R.raw.uva
+
+            ),
+        ),
+        4,
+
         ),
     category(
         "HOGAR",
         R.drawable.hogar,
         "#d68227",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "HOGAR I",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "BANO",
+                        R.raw.bano
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CAJA",
+                        R.raw.caja
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CAMA",
+                        R.raw.cama
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CASA",
+                        R.raw.casa
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CELULAR",
+                        R.raw.celular
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "HOGAR II",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "COCINA",
+                        R.raw.cocina
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "COMPUTADORA",
+                        R.raw.computadora
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CUARTO",
+                        R.raw.cuarto
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CUCHARA",
+                        R.raw.cuchara
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "FOCO",
+                        R.raw.foco
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "HOGAR III",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "GAS",
+                        R.raw.gas
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "IMPRESORA",
+                        R.raw.impresora
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "LAVADORA",
+                        R.raw.lavadora
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "LICUADORA",
+                        R.raw.licuadora
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "LLAVE",
+                        R.raw.llave
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "HOGAR IV",
+                "#d68227",
+
+                mutableListOf(
+                    word(
+                        "LUZ",
+                        R.raw.luz
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "MESA",
+                        R.raw.mesa
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "PLANCHA",
+                        R.raw.plancha
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "PLATO",
+                        R.raw.plato
+
+                    ),
+                    word(
+                        "PUERTA",
+                        R.raw.puerta
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "HOGAR V",
+                "#d68227",
+
+                mutableListOf(
+                    word(
+                        "SILLA",
+                        R.raw.silla
+
+                    ),
+                    word(
+                        "TELEFONO",
+                        R.raw.telefono
+
+                    ),
+                    word(
+                        "TENEDOR",
+                        R.raw.tenedor
+
+                    ),
+                    word(
+                        "VASO",
+                        R.raw.vaso
+
+                    ),
+                    word(
+                        "VENTANA",
+                        R.raw.ventana
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "BANO",
+                R.raw.bano
+
             ),
             word(
-                "B",
-                R.raw.b
+                "CAJA",
+                R.raw.caja
+
             ),
             word(
-                "C",
-                R.raw.c
+                "CAMA",
+                R.raw.cama
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CASA",
+                R.raw.casa
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CELULAR",
+                R.raw.celular
+
             ),
             word(
-                "F",
-                R.raw.f
+                "COCINA",
+                R.raw.cocina
+
             ),
             word(
-                "G",
-                R.raw.g
+                "COMPUTADORA",
+                R.raw.computadora
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CUARTO",
+                R.raw.cuarto
+
             ),
-        )
+            word(
+                "CUCHARA",
+                R.raw.cuchara
+
+            ),
+            word(
+                "FOCO",
+                R.raw.foco
+
+            ),
+            word(
+                "GAS",
+                R.raw.gas
+
+            ),
+            word(
+                "IMPRESORA",
+                R.raw.impresora
+
+            ),
+            word(
+                "LAVADORA",
+                R.raw.lavadora
+
+            ),
+            word(
+                "LICUADORA",
+                R.raw.licuadora
+
+            ),
+            word(
+                "LLAVE",
+                R.raw.llave
+
+            ),
+            word(
+                "LUZ",
+                R.raw.luz
+
+            ),
+            word(
+                "MESA",
+                R.raw.mesa
+
+            ),
+            word(
+                "PLANCHA",
+                R.raw.plancha
+
+            ),
+            word(
+                "PLATO",
+                R.raw.plato
+
+            ),
+            word(
+                "PUERTA",
+                R.raw.puerta
+
+            ),
+            word(
+                "SILLA",
+                R.raw.silla
+
+            ),
+            word(
+                "TELEFONO",
+                R.raw.telefono
+
+            ),
+            word(
+                "TENEDOR",
+                R.raw.tenedor
+
+            ),
+            word(
+                "VASO",
+                R.raw.vaso
+
+            ),
+            word(
+                "VENTANA",
+                R.raw.ventana
+
+            ),
+        ),
+        5,
+
         ),
     category(
         "LUGARES",
         R.drawable.lugares,
         "#eea236",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "LUGARES I",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ANTRO",
+                        R.raw.antro
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "BANCO",
+                        R.raw.banco
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CALLE",
+                        R.raw.calle
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CANTINA",
+                        R.raw.cantina
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CASA",
+                        R.raw.casa
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "LUGARES II",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CENTRO",
+                        R.raw.centro
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CINE",
+                        R.raw.cine
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CIUDAD",
+                        R.raw.ciudad
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "EDIFICIO",
+                        R.raw.edificio
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "ESCUELA",
+                        R.raw.escuela
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "LUGARES III",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "FABRICA",
+                        R.raw.fabrica
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "FERIA",
+                        R.raw.feria
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "FIESTA",
+                        R.raw.fiesta
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "HOTEL",
+                        R.raw.hotel
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "IGLESIA",
+                        R.raw.iglesia
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "LUGARES IV",
+                "#eea236",
+
+                mutableListOf(
+                    word(
+                        "MERCADO",
+                        R.raw.mercado
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "MUSEO",
+                        R.raw.museo
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "RESTAURANTE",
+                        R.raw.restaurante
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "TEATRO",
+                        R.raw.teatro
+
+                    ),
+                    word(
+                        "TIENDA",
+                        R.raw.tienda
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ANTRO",
+                R.raw.antro
+
             ),
             word(
-                "B",
-                R.raw.b
+                "BANCO",
+                R.raw.banco
+
             ),
             word(
-                "C",
-                R.raw.c
+                "CALLE",
+                R.raw.calle
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CANTINA",
+                R.raw.cantina
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CASA",
+                R.raw.casa
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CENTRO",
+                R.raw.centro
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CINE",
+                R.raw.cine
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CIUDAD",
+                R.raw.ciudad
+
             ),
-        )
+            word(
+                "EDIFICIO",
+                R.raw.edificio
+
+            ),
+            word(
+                "ESCUELA",
+                R.raw.escuela
+
+            ),
+            word(
+                "FABRICA",
+                R.raw.fabrica
+
+            ),
+            word(
+                "FERIA",
+                R.raw.feria
+
+            ),
+            word(
+                "FIESTA",
+                R.raw.fiesta
+
+            ),
+            word(
+                "HOTEL",
+                R.raw.hotel
+
+            ),
+            word(
+                "IGLESIA",
+                R.raw.iglesia
+
+            ),
+            word(
+                "MERCADO",
+                R.raw.mercado
+
+            ),
+            word(
+                "MUSEO",
+                R.raw.museo
+
+            ),
+            word(
+                "RESTAURANTE",
+                R.raw.restaurante
+
+            ),
+            word(
+                "TEATRO",
+                R.raw.teatro
+
+            ),
+            word(
+                "TIENDA",
+                R.raw.tienda
+
+            ),
+        ),
+        4,
+
         ),
     category(
         "MESES",
         R.drawable.meses,
         "#42a5f5",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "MESES I",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABRIL",
+                        R.raw.abril
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AGOSTO",
+                        R.raw.agosto
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "DICIEMBRE",
+                        R.raw.diciembre
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ENERO",
+                        R.raw.enero
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "FEBRERO",
+                        R.raw.febrero
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "MESES II",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "JULIO",
+                        R.raw.julio
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "JUNIO",
+                        R.raw.junio
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "MARZO",
+                        R.raw.marzo
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "MAYO",
+                        R.raw.mayo
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "NOVIEMBRE",
+                        R.raw.noviembre
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABRIL",
+                R.raw.abril
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AGOSTO",
+                R.raw.agosto
+
             ),
             word(
-                "C",
-                R.raw.c
+                "DICIEMBRE",
+                R.raw.diciembre
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ENERO",
+                R.raw.enero
+
             ),
             word(
-                "E",
-                R.raw.e
+                "FEBRERO",
+                R.raw.febrero
+
             ),
             word(
-                "F",
-                R.raw.f
+                "JULIO",
+                R.raw.julio
+
             ),
             word(
-                "G",
-                R.raw.g
+                "JUNIO",
+                R.raw.junio
+
             ),
             word(
-                "H",
-                R.raw.h
+                "MARZO",
+                R.raw.marzo
+
             ),
-        )
+            word(
+                "MAYO",
+                R.raw.mayo
+
+            ),
+            word(
+                "NOVIEMBRE",
+                R.raw.noviembre
+
+            ),
+            word(
+                "OCTUBRE",
+                R.raw.octubre
+
+            ),
+            word(
+                "SEPTIEMBRE",
+                R.raw.septiembre
+
+            ),
+        ),
+        2,
+
         ),
     category(
-        "NÚMEROS",
+        "NUMERO",
         R.drawable.numeros,
         "#92d36e",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "NUMERO I",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "0",
+                        R.raw.septiembre
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "1",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "1000000",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "1000",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "100",
+                        R.raw.septiembre,
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "NUMERO II",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "10",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "11",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "12",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "13",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "14",
+                        R.raw.septiembre,
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "NUMERO III",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "15",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "16",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "17",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "18",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "19",
+                        R.raw.septiembre,
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "NUMERO IV",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "2",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "200",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "20",
+                        R.raw.septiembre,
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "25",
+                        R.raw.septiembre,
+
                     ),
+                    word(
+                        "3",
+                        R.raw.septiembre,
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "NUMERO V",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "300",
+                        R.raw.septiembre,
+
+                    ),
+                    word(
+                        "30",
+                        R.raw.septiembre,
+
+                    ),
+                    word(
+                        "4",
+                        R.raw.septiembre,
+
+                    ),
+                    word(
+                        "400",
+                        R.raw.septiembre,
+
+                    ),
+                    word(
+                        "40",
+                        R.raw.septiembre,
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "NUMERO VI",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "300",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "30",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "4",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "400",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "40",
+                        R.raw.septiembre,
+
+                        ),
+                )
+            ),
+            subCategorias(
+                "NUMERO VII",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "300",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "30",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "4",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "400",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "40",
+                        R.raw.septiembre,
+
+                        ),
+                )
+            ),
+            subCategorias(
+                "NUMERO VIII",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "300",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "30",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "4",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "400",
+                        R.raw.septiembre,
+
+                        ),
+                    word(
+                        "40",
+                        R.raw.septiembre,
+
+                        ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
-            ),
+                "300",
+                R.raw.septiembre,
+
+                ),
             word(
-                "B",
-                R.raw.b
-            ),
+                "30",
+                R.raw.septiembre,
+
+                ),
             word(
-                "C",
-                R.raw.c
-            ),
+                "4",
+                R.raw.septiembre,
+
+                ),
             word(
-                "D",
-                R.raw.d
-            ),
+                "400",
+                R.raw.septiembre,
+
+                ),
             word(
-                "E",
-                R.raw.e
-            ),
+                "40",
+                R.raw.septiembre,
+
+                ),
             word(
-                "F",
-                R.raw.f
-            ),
+                "300",
+                R.raw.septiembre,
+
+                ),
             word(
-                "G",
-                R.raw.g
-            ),
+                "30",
+                R.raw.septiembre,
+
+                ),
             word(
-                "H",
-                R.raw.h
-            ),
-        )
+                "4",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "400",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "40",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "300",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "30",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "4",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "400",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "40",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "300",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "30",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "4",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "400",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "40",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "300",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "30",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "4",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "400",
+                R.raw.septiembre,
+
+                ),
+            word(
+                "40",
+                R.raw.septiembre,
+
+                ),
+        ),
+        8,
+
         ),
     category(
         "PERSONAS",
         R.drawable.personas,
         "#ff5d55",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "PERSONAS I",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABUELA",
+                        R.raw.abuela
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ABUELO",
+                        R.raw.abuelo
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ADULTO",
+                        R.raw.adulto
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "AMANTE",
+                        R.raw.amante
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "AMIGA",
+                        R.raw.amiga
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "PERSONAS II",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AMIGO",
+                        R.raw.amigo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ANCIANO",
+                        R.raw.anciano
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BEBE",
+                        R.raw.bebe
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "BISABUELA",
+                        R.raw.bisabuela
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "BISABUELO",
+                        R.raw.bisabuelo
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "PERSONAS III",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "BISNIETA",
+                        R.raw.bisnieta
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "BISNIETO",
+                        R.raw.bisnieto
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CIEGO",
+                        R.raw.ciego
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "COMPANERO",
+                        R.raw.companero
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "CUNADA",
+                        R.raw.cunada
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS IV",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "CUNADO",
+                        R.raw.cunado
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "DIVORCIADO",
+                        R.raw.divorciado
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "ESPOSA",
+                        R.raw.esposa
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "ESPOSO",
+                        R.raw.esposo
+
+                    ),
+                    word(
+                        "HERMANA",
+                        R.raw.hermana
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS V",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "HERMANO",
+                        R.raw.hermano
+
+                    ),
+                    word(
+                        "HIJASTRA",
+                        R.raw.hijastra
+
+                    ),
+                    word(
+                        "HIJASTRO",
+                        R.raw.hijastro
+
+                    ),
+                    word(
+                        "HIJA",
+                        R.raw.hija
+
+                    ),
+                    word(
+                        "HIJO",
+                        R.raw.hijo
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS VI",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "HOMBRE",
+                        R.raw.hombre
+
+                    ),
+                    word(
+                        "HUERFANO",
+                        R.raw.huerfano
+
+                    ),
+                    word(
+                        "MADRASTRA",
+                        R.raw.madrastra
+
+                    ),
+                    word(
+                        "MADRINA",
+                        R.raw.madrina
+
+                    ),
+                    word(
+                        "MAMA",
+                        R.raw.mama
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS VII",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "MATRIMONIO",
+                        R.raw.matrimonio
+
+                    ),
+                    word(
+                        "MEDIAHERMANA",
+                        R.raw.mediahermana
+
+                    ),
+                    word(
+                        "MEDIOHERMANO",
+                        R.raw.mediohermano
+
+                    ),
+                    word(
+                        "MUJER",
+                        R.raw.mujer
+
+                    ),
+                    word(
+                        "NIETA",
+                        R.raw.nieta
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS VIII",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "NIETO",
+                        R.raw.nieto
+
+                    ),
+                    word(
+                        "NINA",
+                        R.raw.nina
+
+                    ),
+                    word(
+                        "NINO",
+                        R.raw.nino
+
+                    ),
+                    word(
+                        "NOVIA",
+                        R.raw.novia
+
+                    ),
+                    word(
+                        "NOVIO",
+                        R.raw.novio
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS IX",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "NUERA",
+                        R.raw.nuera
+
+                    ),
+                    word(
+                        "OYENTE",
+                        R.raw.oyente
+
+                    ),
+                    word(
+                        "PADRASTRO",
+                        R.raw.padrastro
+
+                    ),
+                    word(
+                        "PADRINO",
+                        R.raw.padrino
+
+                    ),
+                    word(
+                        "PAPA",
+                        R.raw.papa
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS X",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "PAREJA",
+                        R.raw.pareja
+
+                    ),
+                    word(
+                        "PERSONA",
+                        R.raw.persona
+
+                    ),
+                    word(
+                        "PRIMA",
+                        R.raw.prima
+
+                    ),
+                    word(
+                        "PRIMO",
+                        R.raw.primo
+
+                    ),
+                    word(
+                        "SENORA",
+                        R.raw.senora
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS XI",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "SENORITA",
+                        R.raw.senorita
+
+                    ),
+                    word(
+                        "SENOR",
+                        R.raw.senor
+
+                    ),
+                    word(
+                        "SEPARADO",
+                        R.raw.separado
+
+                    ),
+                    word(
+                        "SOBRINA",
+                        R.raw.sobrina
+
+                    ),
+                    word(
+                        "SOBRINO",
+                        R.raw.sobrino
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS XII",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "SOLTERO",
+                        R.raw.soltero
+
+                    ),
+                    word(
+                        "SORDO",
+                        R.raw.sordo
+
+                    ),
+                    word(
+                        "SUEGRA",
+                        R.raw.suegra
+
+                    ),
+                    word(
+                        "SUEGRO",
+                        R.raw.suegro
+
+                    ),
+                    word(
+                        "TIA",
+                        R.raw.tia
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PERSONAS XIII",
+                "#ff5d55",
+
+                mutableListOf(
+                    word(
+                        "TIO",
+                        R.raw.tio
+
+                    ),
+                    word(
+                        "UNIONLIBRE",
+                        R.raw.unionlibre
+
+                    ),
+                    word(
+                        "VECINO",
+                        R.raw.vecino
+
+                    ),
+                    word(
+                        "VIUDO",
+                        R.raw.viudo
+
+                    ),
+                    word(
+                        "YERNO",
+                        R.raw.yerno
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABUELA",
+                R.raw.abuela
+
             ),
             word(
-                "B",
-                R.raw.b
+                "ABUELO",
+                R.raw.abuelo
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ADULTO",
+                R.raw.adulto
+
             ),
             word(
-                "D",
-                R.raw.d
+                "AMANTE",
+                R.raw.amante
+
             ),
             word(
-                "E",
-                R.raw.e
+                "AMIGA",
+                R.raw.amiga
+
             ),
             word(
-                "F",
-                R.raw.f
+                "AMIGO",
+                R.raw.amigo
+
             ),
             word(
-                "G",
-                R.raw.g
+                "ANCIANO",
+                R.raw.anciano
+
             ),
             word(
-                "H",
-                R.raw.h
+                "BEBE",
+                R.raw.bebe
+
             ),
-        )
+            word(
+                "BISABUELA",
+                R.raw.bisabuela
+
+            ),
+            word(
+                "BISABUELO",
+                R.raw.bisabuelo
+
+            ),
+            word(
+                "BISNIETA",
+                R.raw.bisnieta
+
+            ),
+            word(
+                "BISNIETO",
+                R.raw.bisnieto
+
+            ),
+            word(
+                "CIEGO",
+                R.raw.ciego
+
+            ),
+            word(
+                "COMPANERO",
+                R.raw.companero
+
+            ),
+            word(
+                "CUNADA",
+                R.raw.cunada
+
+            ),
+            word(
+                "CUNADO",
+                R.raw.cunado
+
+            ),
+            word(
+                "DIVORCIADO",
+                R.raw.divorciado
+
+            ),
+            word(
+                "ESPOSA",
+                R.raw.esposa
+
+            ),
+            word(
+                "ESPOSO",
+                R.raw.esposo
+
+            ),
+            word(
+                "HERMANA",
+                R.raw.hermana
+
+            ),
+            word(
+                "HERMANO",
+                R.raw.hermano
+
+            ),
+            word(
+                "HIJASTRA",
+                R.raw.hijastra
+
+            ),
+            word(
+                "HIJASTRO",
+                R.raw.hijastro
+
+            ),
+            word(
+                "HIJA",
+                R.raw.hija
+
+            ),
+            word(
+                "HIJO",
+                R.raw.hijo
+
+            ),
+            word(
+                "HOMBRE",
+                R.raw.hombre
+
+            ),
+            word(
+                "HUERFANO",
+                R.raw.huerfano
+
+            ),
+            word(
+                "MADRASTRA",
+                R.raw.madrastra
+
+            ),
+            word(
+                "MADRINA",
+                R.raw.madrina
+
+            ),
+            word(
+                "MAMA",
+                R.raw.mama
+
+            ),
+            word(
+                "MATRIMONIO",
+                R.raw.matrimonio
+
+            ),
+            word(
+                "MEDIAHERMANA",
+                R.raw.mediahermana
+
+            ),
+            word(
+                "MEDIOHERMANO",
+                R.raw.mediohermano
+
+            ),
+            word(
+                "MUJER",
+                R.raw.mujer
+
+            ),
+            word(
+                "NIETA",
+                R.raw.nieta
+
+            ),
+            word(
+                "NIETO",
+                R.raw.nieto
+
+            ),
+            word(
+                "NINA",
+                R.raw.nina
+
+            ),
+            word(
+                "NINO",
+                R.raw.nino
+
+            ),
+            word(
+                "NOVIA",
+                R.raw.novia
+
+            ),
+            word(
+                "NOVIO",
+                R.raw.novio
+
+            ),
+            word(
+                "NUERA",
+                R.raw.nuera
+
+            ),
+            word(
+                "OYENTE",
+                R.raw.oyente
+
+            ),
+            word(
+                "PADRASTRO",
+                R.raw.padrastro
+
+            ),
+            word(
+                "PADRINO",
+                R.raw.padrino
+
+            ),
+            word(
+                "PAPA",
+                R.raw.papa
+
+            ),
+            word(
+                "PAREJA",
+                R.raw.pareja
+
+            ),
+            word(
+                "PERSONA",
+                R.raw.persona
+
+            ),
+            word(
+                "PRIMA",
+                R.raw.prima
+
+            ),
+            word(
+                "PRIMO",
+                R.raw.primo
+
+            ),
+            word(
+                "SENORA",
+                R.raw.senora
+
+            ),
+            word(
+                "SENORITA",
+                R.raw.senorita
+
+            ),
+            word(
+                "SENOR",
+                R.raw.senor
+
+            ),
+            word(
+                "SEPARADO",
+                R.raw.separado
+
+            ),
+            word(
+                "SOBRINA",
+                R.raw.sobrina
+
+            ),
+            word(
+                "SOBRINO",
+                R.raw.sobrino
+
+            ),
+            word(
+                "SOLTERO",
+                R.raw.soltero
+
+            ),
+            word(
+                "SORDO",
+                R.raw.sordo
+
+            ),
+            word(
+                "SUEGRA",
+                R.raw.suegra
+
+            ),
+            word(
+                "SUEGRO",
+                R.raw.suegro
+
+            ),
+            word(
+                "TIA",
+                R.raw.tia
+
+            ),
+            word(
+                "TIO",
+                R.raw.tio
+
+            ),
+            word(
+                "UNIONLIBRE",
+                R.raw.unionlibre
+
+            ),
+            word(
+                "VECINO",
+                R.raw.vecino
+
+            ),
+            word(
+                "VIUDO",
+                R.raw.viudo
+
+            ),
+            word(
+                "YERNO",
+                R.raw.yerno
+
+            ),
+        ),
+        13,
+
         ),
     category(
         "PREGUNTAS",
         R.drawable.preguntas,
         "#c238eb",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "PREGUNTAS I",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "COMO",
+                        R.raw.como
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CUAL",
+                        R.raw.cual
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CUANDO",
+                        R.raw.cuando
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CUANTO",
+                        R.raw.cuanto
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC II",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "DONDE",
+                        R.raw.donde
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "COMO",
+                R.raw.como
+
             ),
             word(
-                "B",
-                R.raw.b
+                "CUAL",
+                R.raw.cual
+
             ),
             word(
-                "C",
-                R.raw.c
+                "CUANDO",
+                R.raw.cuando
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CUANTO",
+                R.raw.cuanto
+
             ),
             word(
-                "E",
-                R.raw.e
+                "DONDE",
+                R.raw.donde
+
             ),
             word(
-                "F",
-                R.raw.f
+                "PARAQUE",
+                R.raw.paraque
+
             ),
             word(
-                "G",
-                R.raw.g
+                "PORQUE",
+                R.raw.porque
+
             ),
             word(
-                "H",
-                R.raw.h
+                "QUE",
+                R.raw.que
+
             ),
-        )
+            word(
+                "QUIEN",
+                R.raw.quien
+
+            ),
+        ),
+        1,
+
         ),
     category(
-        "PREPOSICIONES",
+        "PREP",
         R.drawable.preposiciones,
         "#929292",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "PREP I",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABAJO",
+                        R.raw.abajo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ABURRIDO",
+                        R.raw.aburrido
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ACCIDENTE",
+                        R.raw.accidente
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ADENTRO",
+                        R.raw.adentro
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "AFORTUNADO",
+                        R.raw.afortunado
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "PREP II",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ALEGREDIVERTIDO",
+                        R.raw.alegredivertido
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ALGUNOS",
+                        R.raw.algunos
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ALTOESTATURA",
+                        R.raw.altoestatura
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "AMABLE",
+                        R.raw.amable
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "ANTES",
+                        R.raw.antes
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "PREP III",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ARRIBA",
+                        R.raw.arriba
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ASUSTADO",
+                        R.raw.asustado
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ATENCIONATENTO",
+                        R.raw.atencionatento
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "BABOSO",
+                        R.raw.baboso
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "BONITO",
+                        R.raw.bonito
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP IV",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "BROMA",
+                        R.raw.broma
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "BUENO",
+                        R.raw.bueno
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "CADA",
+                        R.raw.cada
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "CALIENTE",
+                        R.raw.caliente
+
+                    ),
+                    word(
+                        "CANSADO",
+                        R.raw.cansado
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP V",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "CARINO",
+                        R.raw.carino
+
+                    ),
+                    word(
+                        "CELOSO",
+                        R.raw.celoso
+
+                    ),
+                    word(
+                        "CHAPARRO",
+                        R.raw.chaparro
+
+                    ),
+                    word(
+                        "CHISTOSO",
+                        R.raw.chistoso
+
+                    ),
+                    word(
+                        "COBARDE",
+                        R.raw.cobarde
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP VI",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "CONTENTO",
+                        R.raw.contento
+
+                    ),
+                    word(
+                        "CURIOSO",
+                        R.raw.curioso
+
+                    ),
+                    word(
+                        "DEBIL",
+                        R.raw.debil
+
+                    ),
+                    word(
+                        "DECENTE",
+                        R.raw.decente
+
+                    ),
+                    word(
+                        "DELGADO",
+                        R.raw.delgado
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP VII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "DESPACIO",
+                        R.raw.despacio
+
+                    ),
+                    word(
+                        "DIFERENTE",
+                        R.raw.diferente
+
+                    ),
+                    word(
+                        "DIFICIL",
+                        R.raw.dificil
+
+                    ),
+                    word(
+                        "DIPLOMA",
+                        R.raw.diploma
+
+                    ),
+                    word(
+                        "DUDA",
+                        R.raw.duda
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP VIII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "EGOISTA",
+                        R.raw.egoista
+
+                    ),
+                    word(
+                        "EJEMPLO",
+                        R.raw.ejemplo
+
+                    ),
+                    word(
+                        "EJERCICIO",
+                        R.raw.ejercicio
+
+                    ),
+                    word(
+                        "ENOJADO",
+                        R.raw.enojado
+
+                    ),
+                    word(
+                        "ENVIDIA",
+                        R.raw.envidia
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP IX",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "ESPECIAL",
+                        R.raw.especial
+
+                    ),
+                    word(
+                        "FACIL",
+                        R.raw.facil
+
+                    ),
+                    word(
+                        "FALSO",
+                        R.raw.falso
+
+                    ),
+                    word(
+                        "FELIZ",
+                        R.raw.feliz
+
+                    ),
+                    word(
+                        "FEO",
+                        R.raw.feo
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP X",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "FLOJO",
+                        R.raw.flojo
+
+                    ),
+                    word(
+                        "FUERTE",
+                        R.raw.fuerte
+
+                    ),
+                    word(
+                        "FUERZA",
+                        R.raw.fuerza
+
+                    ),
+                    word(
+                        "GORDO",
+                        R.raw.gordo
+
+                    ),
+                    word(
+                        "GRATIS",
+                        R.raw.gratis
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XI",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "GROSERO",
+                        R.raw.grosero
+
+                    ),
+                    word(
+                        "GUAPO",
+                        R.raw.guapo
+
+                    ),
+                    word(
+                        "HAMBRE",
+                        R.raw.hambre
+
+                    ),
+                    word(
+                        "HISTORIA",
+                        R.raw.historia
+
+                    ),
+                    word(
+                        "HUMILDE",
+                        R.raw.humilde
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "IMPORTANTE",
+                        R.raw.importante
+
+                    ),
+                    word(
+                        "INTELIGENTE",
+                        R.raw.inteligente
+
+                    ),
+                    word(
+                        "JAMAS",
+                        R.raw.jamas
+
+                    ),
+                    word(
+                        "JUNTA",
+                        R.raw.junta
+
+                    ),
+                    word(
+                        "JUNTO",
+                        R.raw.junto
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XIII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "LEJOS",
+                        R.raw.lejos
+
+                    ),
+                    word(
+                        "LIBRE",
+                        R.raw.libre
+
+                    ),
+                    word(
+                        "LOCO",
+                        R.raw.loco
+
+                    ),
+                    word(
+                        "LSM",
+                        R.raw.lsm
+
+                    ),
+                    word(
+                        "MALO",
+                        R.raw.malo
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XIV",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "MAS",
+                        R.raw.mas
+
+                    ),
+                    word(
+                        "MEJOR",
+                        R.raw.mejor
+
+                    ),
+                    word(
+                        "MIEDO",
+                        R.raw.miedo
+
+                    ),
+                    word(
+                        "NECIO",
+                        R.raw.necio
+
+                    ),
+                    word(
+                        "NO",
+                        R.raw.no
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XV",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "NUEVO",
+                        R.raw.nuevo
+
+                    ),
+                    word(
+                        "NUNCA",
+                        R.raw.nunca
+
+                    ),
+                    word(
+                        "OJALA",
+                        R.raw.ojala
+
+                    ),
+                    word(
+                        "PACIENCIA",
+                        R.raw.paciencia
+
+                    ),
+                    word(
+                        "PEOR",
+                        R.raw.peor
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XVI",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "PERO",
+                        R.raw.pero
+
+                    ),
+                    word(
+                        "POBRE",
+                        R.raw.pobre
+
+                    ),
+                    word(
+                        "PRESUMIDO",
+                        R.raw.presumido
+
+                    ),
+                    word(
+                        "PROBLEMA",
+                        R.raw.problema
+
+                    ),
+                    word(
+                        "RAPIDOPRONTO",
+                        R.raw.rapidopronto
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XVII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "RARO",
+                        R.raw.raro
+
+                    ),
+                    word(
+                        "SECRETO",
+                        R.raw.secreto
+
+                    ),
+                    word(
+                        "SENAPROIPA",
+                        R.raw.senaproipa
+
+                    ),
+                    word(
+                        "SENAS",
+                        R.raw.senas
+
+                    ),
+                    word(
+                        "SI",
+                        R.raw.si
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "PREP XVIII",
+                "#929292",
+
+                mutableListOf(
+                    word(
+                        "SUCIO",
+                        R.raw.sucio
+
+                    ),
+                    word(
+                        "SUERTE",
+                        R.raw.suerte
+
+                    ),
+                    word(
+                        "TODO",
+                        R.raw.todo
+
+                    ),
+                    word(
+                        "TONTO",
+                        R.raw.tonto
+
+                    ),
+                    word(
+                        "TRAVIESO",
+                        R.raw.travieso
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABAJO",
+                R.raw.abajo
+
             ),
             word(
-                "B",
-                R.raw.b
+                "ABURRIDO",
+                R.raw.aburrido
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ACCIDENTE",
+                R.raw.accidente
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ADENTRO",
+                R.raw.adentro
+
             ),
             word(
-                "E",
-                R.raw.e
+                "AFORTUNADO",
+                R.raw.afortunado
+
             ),
             word(
-                "F",
-                R.raw.f
+                "ALEGREDIVERTIDO",
+                R.raw.alegredivertido
+
             ),
             word(
-                "G",
-                R.raw.g
+                "ALGUNOS",
+                R.raw.algunos
+
             ),
             word(
-                "H",
-                R.raw.h
+                "ALTOESTATURA",
+                R.raw.altoestatura
+
             ),
-        )
+            word(
+                "AMABLE",
+                R.raw.amable
+
+            ),
+            word(
+                "ANTES",
+                R.raw.antes
+
+            ),
+            word(
+                "ARRIBA",
+                R.raw.arriba
+
+            ),
+            word(
+                "ASUSTADO",
+                R.raw.asustado
+
+            ),
+            word(
+                "ATENCIONATENTO",
+                R.raw.atencionatento
+
+            ),
+            word(
+                "BABOSO",
+                R.raw.baboso
+
+            ),
+            word(
+                "BONITO",
+                R.raw.bonito
+
+            ),
+            word(
+                "BROMA",
+                R.raw.broma
+
+            ),
+            word(
+                "BUENO",
+                R.raw.bueno
+
+            ),
+            word(
+                "CADA",
+                R.raw.cada
+
+            ),
+            word(
+                "CALIENTE",
+                R.raw.caliente
+
+            ),
+            word(
+                "CANSADO",
+                R.raw.cansado
+
+            ),
+            word(
+                "CARINO",
+                R.raw.carino
+
+            ),
+            word(
+                "CELOSO",
+                R.raw.celoso
+
+            ),
+            word(
+                "CHAPARRO",
+                R.raw.chaparro
+
+            ),
+            word(
+                "CHISTOSO",
+                R.raw.chistoso
+
+            ),
+            word(
+                "COBARDE",
+                R.raw.cobarde
+
+            ),
+            word(
+                "CONTENTO",
+                R.raw.contento
+
+            ),
+            word(
+                "CURIOSO",
+                R.raw.curioso
+
+            ),
+            word(
+                "DEBIL",
+                R.raw.debil
+
+            ),
+            word(
+                "DECENTE",
+                R.raw.decente
+
+            ),
+            word(
+                "DELGADO",
+                R.raw.delgado
+
+            ),
+            word(
+                "DESPACIO",
+                R.raw.despacio
+
+            ),
+            word(
+                "DIFERENTE",
+                R.raw.diferente
+
+            ),
+            word(
+                "DIFICIL",
+                R.raw.dificil
+
+            ),
+            word(
+                "DIPLOMA",
+                R.raw.diploma
+
+            ),
+            word(
+                "DUDA",
+                R.raw.duda
+
+            ),
+            word(
+                "EGOISTA",
+                R.raw.egoista
+
+            ),
+            word(
+                "EJEMPLO",
+                R.raw.ejemplo
+
+            ),
+            word(
+                "EJERCICIO",
+                R.raw.ejercicio
+
+            ),
+            word(
+                "ENOJADO",
+                R.raw.enojado
+
+            ),
+            word(
+                "ENVIDIA",
+                R.raw.envidia
+
+            ),
+            word(
+                "ESPECIAL",
+                R.raw.especial
+
+            ),
+            word(
+                "FACIL",
+                R.raw.facil
+
+            ),
+            word(
+                "FALSO",
+                R.raw.falso
+
+            ),
+            word(
+                "FELIZ",
+                R.raw.feliz
+
+            ),
+            word(
+                "FEO",
+                R.raw.feo
+
+            ),
+            word(
+                "FLOJO",
+                R.raw.flojo
+
+            ),
+            word(
+                "FUERTE",
+                R.raw.fuerte
+
+            ),
+            word(
+                "FUERZA",
+                R.raw.fuerza
+
+            ),
+            word(
+                "GORDO",
+                R.raw.gordo
+
+            ),
+            word(
+                "GRATIS",
+                R.raw.gratis
+
+            ),
+            word(
+                "GROSERO",
+                R.raw.grosero
+
+            ),
+            word(
+                "GUAPO",
+                R.raw.guapo
+
+            ),
+            word(
+                "HAMBRE",
+                R.raw.hambre
+
+            ),
+            word(
+                "HISTORIA",
+                R.raw.historia
+
+            ),
+            word(
+                "HUMILDE",
+                R.raw.humilde
+
+            ),
+            word(
+                "IMPORTANTE",
+                R.raw.importante
+
+            ),
+            word(
+                "INTELIGENTE",
+                R.raw.inteligente
+
+            ),
+            word(
+                "JAMAS",
+                R.raw.jamas
+
+            ),
+            word(
+                "JUNTA",
+                R.raw.junta
+
+            ),
+            word(
+                "JUNTO",
+                R.raw.junto
+
+            ),
+            word(
+                "LEJOS",
+                R.raw.lejos
+
+            ),
+            word(
+                "LIBRE",
+                R.raw.libre
+
+            ),
+            word(
+                "LOCO",
+                R.raw.loco
+
+            ),
+            word(
+                "LSM",
+                R.raw.lsm
+
+            ),
+            word(
+                "MALO",
+                R.raw.malo
+
+            ),
+            word(
+                "MAS",
+                R.raw.mas
+
+            ),
+            word(
+                "MEJOR",
+                R.raw.mejor
+
+            ),
+            word(
+                "MIEDO",
+                R.raw.miedo
+
+            ),
+            word(
+                "NECIO",
+                R.raw.necio
+
+            ),
+            word(
+                "NO",
+                R.raw.no
+
+            ),
+            word(
+                "NUEVO",
+                R.raw.nuevo
+
+            ),
+            word(
+                "NUNCA",
+                R.raw.nunca
+
+            ),
+            word(
+                "OJALA",
+                R.raw.ojala
+
+            ),
+            word(
+                "PACIENCIA",
+                R.raw.paciencia
+
+            ),
+            word(
+                "PEOR",
+                R.raw.peor
+
+            ),
+            word(
+                "PERO",
+                R.raw.pero
+
+            ),
+            word(
+                "POBRE",
+                R.raw.pobre
+
+            ),
+            word(
+                "PRESUMIDO",
+                R.raw.presumido
+
+            ),
+            word(
+                "PROBLEMA",
+                R.raw.problema
+
+            ),
+            word(
+                "RAPIDOPRONTO",
+                R.raw.rapidopronto
+
+            ),
+            word(
+                "RARO",
+                R.raw.raro
+
+            ),
+            word(
+                "SECRETO",
+                R.raw.secreto
+
+            ),
+            word(
+                "SENAPROIPA",
+                R.raw.senaproipa
+
+            ),
+            word(
+                "SENAS",
+                R.raw.senas
+
+            ),
+            word(
+                "SI",
+                R.raw.si
+
+            ),
+            word(
+                "SUCIO",
+                R.raw.sucio
+
+            ),
+            word(
+                "SUERTE",
+                R.raw.suerte
+
+            ),
+            word(
+                "TODO",
+                R.raw.todo
+
+            ),
+            word(
+                "TONTO",
+                R.raw.tonto
+
+            ),
+            word(
+                "TRAVIESO",
+                R.raw.travieso
+
+            ),
+            word(
+                "TRISTE",
+                R.raw.triste
+
+            ),
+            word(
+                "VERDAD",
+                R.raw.verdad
+
+            ),
+            word(
+                "VERGUENZA",
+                R.raw.verguenza
+
+            ),
+        ),
+        18,
+
         ),
     category(
         "PRONOMBRES",
         R.drawable.pronombres,
         "#3CA99B",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "PRONOMBRES I",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ELLA",
+                        R.raw.ella
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ELLOS",
+                        R.raw.ellos
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "EL",
+                        R.raw.el
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "NOSOTROS",
+                        R.raw.nosotros
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC II",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "TU",
+                        R.raw.tu
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ELLA",
+                R.raw.ella
+
             ),
             word(
-                "B",
-                R.raw.b
+                "ELLOS",
+                R.raw.ellos
+
             ),
             word(
-                "C",
-                R.raw.c
+                "EL",
+                R.raw.el
+
             ),
             word(
-                "D",
-                R.raw.d
+                "NOSOTROS",
+                R.raw.nosotros
+
             ),
             word(
-                "E",
-                R.raw.e
+                "TU",
+                R.raw.tu
+
             ),
             word(
-                "F",
-                R.raw.f
+                "USTEDES",
+                R.raw.ustedes
+
             ),
             word(
-                "G",
-                R.raw.g
+                "YO",
+                R.raw.yo
+
             ),
-            word(
-                "H",
-                R.raw.h
-            ),
-        )
+        ),
+        1,
+
         ),
     category(
         "OFICIOS",
         R.drawable.puestos,
         "#d68227",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "OFICIOS I",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABOGADO",
+                        R.raw.abogado
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ACTOR",
+                        R.raw.actor
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ALBANIL",
+                        R.raw.albanil
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ALUMNO",
+                        R.raw.alumno
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "ARQUITECTO",
+                        R.raw.arquitecto
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "OFICIOS II",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "BOMBERO",
+                        R.raw.bombero
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CARPINTERO",
+                        R.raw.carpintero
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CHOFER",
+                        R.raw.chofer
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "DENTISTA",
+                        R.raw.dentista
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "DIPUTADO",
+                        R.raw.diputado
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "OFICIOS III",
+                "#d68227",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "DIRECTOR",
+                        R.raw.director
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ENFERMERA",
+                        R.raw.enfermera
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "GOBERNADOR",
+                        R.raw.gobernador
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "GUARDIA",
+                        R.raw.guardia
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "INGENIERO",
+                        R.raw.ingeniero
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "OFICIOS IV",
+                "#d68227",
+
+                mutableListOf(
+                    word(
+                        "INTERPRETE",
+                        R.raw.interprete
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "JEFE",
+                        R.raw.jefe
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "LICENCIADO",
+                        R.raw.licenciado
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "LIDER",
+                        R.raw.lider
+
+                    ),
+                    word(
+                        "MAESTRO",
+                        R.raw.maestro
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "OFICIOS V",
+                "#d68227",
+
+                mutableListOf(
+                    word(
+                        "MECANICO",
+                        R.raw.mecanico
+
+                    ),
+                    word(
+                        "MEDICO",
+                        R.raw.medico
+
+                    ),
+                    word(
+                        "MESERO",
+                        R.raw.mesero
+
+                    ),
+                    word(
+                        "POLICIA",
+                        R.raw.policia
+
+                    ),
+                    word(
+                        "PRESIDENTE",
+                        R.raw.presidente
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "OFICIOS VI",
+                "#d68227",
+
+                mutableListOf(
+                    word(
+                        "PROFESOR",
+                        R.raw.profesor
+
+                    ),
+                    word(
+                        "PSICOLOGO",
+                        R.raw.psicologo
+
+                    ),
+                    word(
+                        "SENADOR",
+                        R.raw.senador
+
+                    ),
+                    word(
+                        "SOLDADO",
+                        R.raw.soldado
+
+                    ),
+                    word(
+                        "TAXISTA",
+                        R.raw.taxista
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABOGADO",
+                R.raw.abogado
+
             ),
             word(
-                "B",
-                R.raw.b
+                "ACTOR",
+                R.raw.actor
+
             ),
             word(
-                "C",
-                R.raw.c
+                "ALBANIL",
+                R.raw.albanil
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ALUMNO",
+                R.raw.alumno
+
             ),
             word(
-                "E",
-                R.raw.e
+                "ARQUITECTO",
+                R.raw.arquitecto
+
             ),
             word(
-                "F",
-                R.raw.f
+                "BOMBERO",
+                R.raw.bombero
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CARPINTERO",
+                R.raw.carpintero
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CHOFER",
+                R.raw.chofer
+
             ),
-        )
+            word(
+                "DENTISTA",
+                R.raw.dentista
+
+            ),
+            word(
+                "DIPUTADO",
+                R.raw.diputado
+
+            ),
+            word(
+                "DIRECTOR",
+                R.raw.director
+
+            ),
+            word(
+                "ENFERMERA",
+                R.raw.enfermera
+
+            ),
+            word(
+                "GOBERNADOR",
+                R.raw.gobernador
+
+            ),
+            word(
+                "GUARDIA",
+                R.raw.guardia
+
+            ),
+            word(
+                "INGENIERO",
+                R.raw.ingeniero
+
+            ),
+            word(
+                "INTERPRETE",
+                R.raw.interprete
+
+            ),
+            word(
+                "JEFE",
+                R.raw.jefe
+
+            ),
+            word(
+                "LICENCIADO",
+                R.raw.licenciado
+
+            ),
+            word(
+                "LIDER",
+                R.raw.lider
+
+            ),
+            word(
+                "MAESTRO",
+                R.raw.maestro
+
+            ),
+            word(
+                "MECANICO",
+                R.raw.mecanico
+
+            ),
+            word(
+                "MEDICO",
+                R.raw.medico
+
+            ),
+            word(
+                "MESERO",
+                R.raw.mesero
+
+            ),
+            word(
+                "POLICIA",
+                R.raw.policia
+
+            ),
+            word(
+                "PRESIDENTE",
+                R.raw.presidente
+
+            ),
+            word(
+                "PROFESOR",
+                R.raw.profesor
+
+            ),
+            word(
+                "PSICOLOGO",
+                R.raw.psicologo
+
+            ),
+            word(
+                "SENADOR",
+                R.raw.senador
+
+            ),
+            word(
+                "SOLDADO",
+                R.raw.soldado
+
+            ),
+            word(
+                "TAXISTA",
+                R.raw.taxista
+
+            ),
+            word(
+                "TECNICO",
+                R.raw.tecnico
+
+            ),
+            word(
+                "VENDEDOR",
+                R.raw.vendedor
+
+            ),
+        ),
+        6,
+
         ),
     category(
         "ROPA",
         R.drawable.ropa,
         "#eea236",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "ROPA I",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ABRIGO",
+                        R.raw.abrigo
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "BRASIER",
+                        R.raw.brasier
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BUFANDA",
+                        R.raw.bufanda
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CALZON",
+                        R.raw.calzon
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CAMISA",
+                        R.raw.camisa
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "ROPA II",
+                "#eea236",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CORBATA",
+                        R.raw.corbata
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "FALDA",
+                        R.raw.falda
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "MEDIAS",
+                        R.raw.medias
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "PANTALON",
+                        R.raw.pantalon
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "TENIS",
+                        R.raw.tenis
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ABRIGO",
+                R.raw.abrigo
+
             ),
             word(
-                "B",
-                R.raw.b
+                "BRASIER",
+                R.raw.brasier
+
             ),
             word(
-                "C",
-                R.raw.c
+                "BUFANDA",
+                R.raw.bufanda
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CALZON",
+                R.raw.calzon
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CAMISA",
+                R.raw.camisa
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CORBATA",
+                R.raw.corbata
+
             ),
             word(
-                "G",
-                R.raw.g
+                "FALDA",
+                R.raw.falda
+
             ),
             word(
-                "H",
-                R.raw.h
+                "MEDIAS",
+                R.raw.medias
+
             ),
-        )
-    ),
+            word(
+                "PANTALON",
+                R.raw.pantalon
+
+            ),
+            word(
+                "TENIS",
+                R.raw.tenis
+
+            ),
+            word(
+                "VESTIDO",
+                R.raw.vestido
+
+            ),
+            word(
+                "ZAPATOS",
+                R.raw.zapatos
+
+            ),
+        ),
+        2,
+
+        ),
     category(
         "SALUDOS",
         R.drawable.saludos,
         "#42a5f5",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "SALUDOS I",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "ADIOS",
+                        R.raw.adios
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "BIEN",
+                        R.raw.bien
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BUENASNOCHES",
+                        R.raw.buenasnoches
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "BUENASTARDES",
+                        R.raw.buenastardes
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "BUENOSDIAS",
+                        R.raw.buenosdias
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "SALUDOS II",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "COMOESTAS",
+                        R.raw.comoestas
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "COMOTELLAMAS",
+                        R.raw.comotellamas
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "DENADA",
+                        R.raw.denada
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "GRACIAS",
+                        R.raw.gracias
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "SALUDOS III",
+                "#42a5f5",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "GUSTODECONOCERTE",
+                        R.raw.gustodeconocerte
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "HOLA",
+                        R.raw.hola
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "MAL",
+                        R.raw.mal
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "MASOMENOS",
+                        R.raw.masomenos
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "NOSVEMOS",
+                        R.raw.nosvemos
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "ADIOS",
+                R.raw.adios
+
             ),
             word(
-                "B",
-                R.raw.b
+                "BIEN",
+                R.raw.bien
+
             ),
             word(
-                "C",
-                R.raw.c
+                "BUENASNOCHES",
+                R.raw.buenasnoches
+
             ),
             word(
-                "D",
-                R.raw.d
+                "BUENASTARDES",
+                R.raw.buenastardes
+
             ),
             word(
-                "E",
-                R.raw.e
+                "BUENOSDIAS",
+                R.raw.buenosdias
+
             ),
             word(
-                "F",
-                R.raw.f
+                "COMOESTAS",
+                R.raw.comoestas
+
             ),
             word(
-                "G",
-                R.raw.g
+                "COMOTELLAMAS",
+                R.raw.comotellamas
+
             ),
             word(
-                "H",
-                R.raw.h
+                "DENADA",
+                R.raw.denada
+
             ),
-        )
+            word(
+                "GRACIAS",
+                R.raw.gracias
+
+            ),
+            word(
+                "GUSTODECONOCERTE",
+                R.raw.gustodeconocerte
+
+            ),
+            word(
+                "HOLA",
+                R.raw.hola
+
+            ),
+            word(
+                "MAL",
+                R.raw.mal
+
+            ),
+            word(
+                "MASOMENOS",
+                R.raw.masomenos
+
+            ),
+            word(
+                "NOSVEMOS",
+                R.raw.nosvemos
+
+            ),
+            word(
+                "PERDON",
+                R.raw.perdon
+
+            ),
+            word(
+                "PORFAVOR",
+                R.raw.porfavor
+
+            ),
+        ),
+        3,
+
         ),
     category(
         "TIEMPO",
         R.drawable.tiempo,
         "#92d36e",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "TIEMPO I",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AHORA",
+                        R.raw.ahora
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AHORITA",
+                        R.raw.ahorita
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "AIRE",
+                        R.raw.aire
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ANO",
+                        R.raw.ano
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "ANTIER",
+                        R.raw.antier
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "TIEMPO II",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AVECES",
+                        R.raw.aveces
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AYER",
+                        R.raw.ayer
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CALENDARIO",
+                        R.raw.calendario
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CALOR",
+                        R.raw.calor
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CUMPLEANOS",
+                        R.raw.cumpleanos
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "TIEMPO III",
+                "#92d36e",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "DESPUES",
+                        R.raw.despues
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "DIA",
+                        R.raw.dia
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "EDAD",
+                        R.raw.edad
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "FECHA",
+                        R.raw.fecha
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "FRIO",
+                        R.raw.frio
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "TIEMPO IV",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "FUTURO",
+                        R.raw.futuro
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "HASTA",
+                        R.raw.hasta
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "HORA",
+                        R.raw.hora
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "HOY",
+                        R.raw.hoy
+
+                    ),
+                    word(
+                        "INVIERNO",
+                        R.raw.invierno
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "TIEMPO V",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "MANANA",
+                        R.raw.manana
+
+                    ),
+                    word(
+                        "MEDIODIA",
+                        R.raw.mediodia
+
+                    ),
+                    word(
+                        "MES",
+                        R.raw.mes
+
+                    ),
+                    word(
+                        "MIENTRAS",
+                        R.raw.mientras
+
+                    ),
+                    word(
+                        "MINUTO",
+                        R.raw.minuto
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "TIEMPO VI",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "NOCHE",
+                        R.raw.noche
+
+                    ),
+                    word(
+                        "OTONO",
+                        R.raw.otono
+
+                    ),
+                    word(
+                        "OTRAVEZ",
+                        R.raw.otravez
+
+                    ),
+                    word(
+                        "OTRO",
+                        R.raw.otro
+
+                    ),
+                    word(
+                        "PASADO",
+                        R.raw.pasado
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "TIEMPO VII",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "PRESENTE",
+                        R.raw.presente
+
+                    ),
+                    word(
+                        "PRIMAVERA",
+                        R.raw.primavera
+
+                    ),
+                    word(
+                        "PRIMERAVEZ",
+                        R.raw.primeravez
+
+                    ),
+                    word(
+                        "PROXIMO",
+                        R.raw.proximo
+
+                    ),
+                    word(
+                        "SEMANA",
+                        R.raw.semana
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "TIEMPO VIII",
+                "#92d36e",
+
+                mutableListOf(
+                    word(
+                        "SIEMPRE",
+                        R.raw.siempre
+
+                    ),
+                    word(
+                        "TARDE",
+                        R.raw.tarde
+
+                    ),
+                    word(
+                        "TEMPRANO",
+                        R.raw.temprano
+
+                    ),
+                    word(
+                        "UNAVEZ",
+                        R.raw.unavez
+
+                    ),
+                    word(
+                        "VERANO",
+                        R.raw.verano
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "AHORA",
+                R.raw.ahora
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AHORITA",
+                R.raw.ahorita
+
             ),
             word(
-                "C",
-                R.raw.c
+                "AIRE",
+                R.raw.aire
+
             ),
             word(
-                "D",
-                R.raw.d
+                "ANO",
+                R.raw.ano
+
             ),
             word(
-                "E",
-                R.raw.e
+                "ANTIER",
+                R.raw.antier
+
             ),
             word(
-                "F",
-                R.raw.f
+                "AVECES",
+                R.raw.aveces
+
             ),
             word(
-                "G",
-                R.raw.g
+                "AYER",
+                R.raw.ayer
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CALENDARIO",
+                R.raw.calendario
+
             ),
-        )
+            word(
+                "CALOR",
+                R.raw.calor
+
+            ),
+            word(
+                "CUMPLEANOS",
+                R.raw.cumpleanos
+
+            ),
+            word(
+                "DESPUES",
+                R.raw.despues
+
+            ),
+            word(
+                "DIA",
+                R.raw.dia
+
+            ),
+            word(
+                "EDAD",
+                R.raw.edad
+
+            ),
+            word(
+                "FECHA",
+                R.raw.fecha
+
+            ),
+            word(
+                "FRIO",
+                R.raw.frio
+
+            ),
+            word(
+                "FUTURO",
+                R.raw.futuro
+
+            ),
+            word(
+                "HASTA",
+                R.raw.hasta
+
+            ),
+            word(
+                "HORA",
+                R.raw.hora
+
+            ),
+            word(
+                "HOY",
+                R.raw.hoy
+
+            ),
+            word(
+                "INVIERNO",
+                R.raw.invierno
+
+            ),
+            word(
+                "MANANA",
+                R.raw.manana
+
+            ),
+            word(
+                "MEDIODIA",
+                R.raw.mediodia
+
+            ),
+            word(
+                "MES",
+                R.raw.mes
+
+            ),
+            word(
+                "MIENTRAS",
+                R.raw.mientras
+
+            ),
+            word(
+                "MINUTO",
+                R.raw.minuto
+
+            ),
+            word(
+                "NOCHE",
+                R.raw.noche
+
+            ),
+            word(
+                "OTONO",
+                R.raw.otono
+
+            ),
+            word(
+                "OTRAVEZ",
+                R.raw.otravez
+
+            ),
+            word(
+                "OTRO",
+                R.raw.otro
+
+            ),
+            word(
+                "PASADO",
+                R.raw.pasado
+
+            ),
+            word(
+                "PRESENTE",
+                R.raw.presente
+
+            ),
+            word(
+                "PRIMAVERA",
+                R.raw.primavera
+
+            ),
+            word(
+                "PRIMERAVEZ",
+                R.raw.primeravez
+
+            ),
+            word(
+                "PROXIMO",
+                R.raw.proximo
+
+            ),
+            word(
+                "SEMANA",
+                R.raw.semana
+
+            ),
+            word(
+                "SIEMPRE",
+                R.raw.siempre
+
+            ),
+            word(
+                "TARDE",
+                R.raw.tarde
+
+            ),
+            word(
+                "TEMPRANO",
+                R.raw.temprano
+
+            ),
+            word(
+                "UNAVEZ",
+                R.raw.unavez
+
+            ),
+            word(
+                "VERANO",
+                R.raw.verano
+
+            ),
+            word(
+                "VIENTO",
+                R.raw.viento
+
+            ),
+        ),
+        8,
+
         ),
     category(
         "TRANSPORTE",
         R.drawable.transporte,
         "#ff5d55",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "TRANSPORTE I",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AVION",
+                        R.raw.avion
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "BARCO",
+                        R.raw.barco
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BICICLETA",
+                        R.raw.bicicleta
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CAMION",
+                        R.raw.camion
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CARRO",
+                        R.raw.carro
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "TRANSPORTE II",
+                "#ff5d55",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CDEAUTOBUSES",
+                        R.raw.cdeautobuses
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "HELICOPTERO",
+                        R.raw.helicoptero
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "METRO",
+                        R.raw.metro
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "MOTOCICLETA",
+                        R.raw.motocicleta
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
-                    ),
-                )
-            ),
-            subCategorias(
-                "ABC III",
-                "eea236",
-                mutableListOf(
-                    word(
-                        "A",
-                        R.raw.a
-                    ),
-                    word(
-                        "B",
-                        R.raw.b
-                    ),
-                    word(
-                        "C",
-                        R.raw.c
-                    ),
-                    word(
-                        "D",
-                        R.raw.d
-                    ),
-                    word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "TAXI",
+                        R.raw.taxi
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "AVION",
+                R.raw.avion
+
             ),
             word(
-                "B",
-                R.raw.b
+                "BARCO",
+                R.raw.barco
+
             ),
             word(
-                "C",
-                R.raw.c
+                "BICICLETA",
+                R.raw.bicicleta
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CAMION",
+                R.raw.camion
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CARRO",
+                R.raw.carro
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CDEAUTOBUSES",
+                R.raw.cdeautobuses
+
             ),
             word(
-                "G",
-                R.raw.g
+                "HELICOPTERO",
+                R.raw.helicoptero
+
             ),
             word(
-                "H",
-                R.raw.h
+                "METRO",
+                R.raw.metro
+
             ),
-        )
+            word(
+                "MOTOCICLETA",
+                R.raw.motocicleta
+
+            ),
+            word(
+                "TAXI",
+                R.raw.taxi
+
+            ),
+            word(
+                "TRANSPORTE",
+                R.raw.transporte
+
+            ),
+            word(
+                "TREN",
+                R.raw.tren
+
+            ),
+        ),
+        2,
+
         ),
     category(
         "VERBOS",
         R.drawable.verbos,
         "#c238eb",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "VERBOS I",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "APRENDER",
+                        R.raw.aprender
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AVISAR",
+                        R.raw.avisar
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "AYUDAR",
+                        R.raw.ayudar
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "COMER",
+                        R.raw.comer
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "COMPRAR",
+                        R.raw.comprar
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "VERBOS II",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CREER",
+                        R.raw.creer
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CUIDAR",
+                        R.raw.cuidar
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "DAR",
+                        R.raw.dar
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "DECIR",
+                        R.raw.decir
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "DESCANSAR",
+                        R.raw.descansar
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "VERBOS III",
+                "#c238eb",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "DORMIR",
+                        R.raw.dormir
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "EMPEZAR",
+                        R.raw.empezar
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "ENSENAR",
+                        R.raw.ensenar
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "ENTENDER",
+                        R.raw.entender
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
+                        "ESCRIBIR",
+                        R.raw.escribir
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "VERBOS IV",
+                "#c238eb",
+
+                mutableListOf(
+                    word(
+                        "ESPERAR",
+                        R.raw.esperar
+
                     ),
                     word(
-                        "F",
-                        R.raw.f
+                        "ESTUDIAR",
+                        R.raw.estudiar
+
                     ),
                     word(
-                        "G",
-                        R.raw.g
+                        "EXPLICAR",
+                        R.raw.explicar
+
                     ),
                     word(
-                        "H",
-                        R.raw.h
+                        "HABLAR",
+                        R.raw.hablar
+
+                    ),
+                    word(
+                        "HACER",
+                        R.raw.hacer
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "VERBOS V",
+                "#c238eb",
+
+                mutableListOf(
+                    word(
+                        "JUGAR",
+                        R.raw.jugar
+
+                    ),
+                    word(
+                        "LIMPIAR",
+                        R.raw.limpiar
+
+                    ),
+                    word(
+                        "NECESITAR",
+                        R.raw.necesitar
+
+                    ),
+                    word(
+                        "OLVIDAR",
+                        R.raw.olvidar
+
+                    ),
+                    word(
+                        "PAGAR",
+                        R.raw.pagar
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "VERBOS VI",
+                "#c238eb",
+
+                mutableListOf(
+                    word(
+                        "PENSAR",
+                        R.raw.pensar
+
+                    ),
+                    word(
+                        "PERDER",
+                        R.raw.perder
+
+                    ),
+                    word(
+                        "PLATICAR",
+                        R.raw.platicar
+
+                    ),
+                    word(
+                        "PODER",
+                        R.raw.poder
+
+                    ),
+                    word(
+                        "PREGUNTAR",
+                        R.raw.preguntar
+
+                    ),
+                )
+            ),
+            subCategorias(
+                "VERBOS VII",
+                "#c238eb",
+
+                mutableListOf(
+                    word(
+                        "SENTAR",
+                        R.raw.sentar
+
+                    ),
+                    word(
+                        "TERMINAR",
+                        R.raw.terminar
+
+                    ),
+                    word(
+                        "TRABAJAR",
+                        R.raw.trabajar
+
+                    ),
+                    word(
+                        "VENDER",
+                        R.raw.vender
+
+                    ),
+                    word(
+                        "VER",
+                        R.raw.ver
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "APRENDER",
+                R.raw.aprender
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AVISAR",
+                R.raw.avisar
+
             ),
             word(
-                "C",
-                R.raw.c
+                "AYUDAR",
+                R.raw.ayudar
+
             ),
             word(
-                "D",
-                R.raw.d
+                "COMER",
+                R.raw.comer
+
             ),
             word(
-                "E",
-                R.raw.e
+                "COMPRAR",
+                R.raw.comprar
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CREER",
+                R.raw.creer
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CUIDAR",
+                R.raw.cuidar
+
             ),
             word(
-                "H",
-                R.raw.h
+                "DAR",
+                R.raw.dar
+
             ),
-        )
+            word(
+                "DECIR",
+                R.raw.decir
+
+            ),
+            word(
+                "DESCANSAR",
+                R.raw.descansar
+
+            ),
+            word(
+                "DORMIR",
+                R.raw.dormir
+
+            ),
+            word(
+                "EMPEZAR",
+                R.raw.empezar
+
+            ),
+            word(
+                "ENSENAR",
+                R.raw.ensenar
+
+            ),
+            word(
+                "ENTENDER",
+                R.raw.entender
+
+            ),
+            word(
+                "ESCRIBIR",
+                R.raw.escribir
+
+            ),
+            word(
+                "ESPERAR",
+                R.raw.esperar
+
+            ),
+            word(
+                "ESTUDIAR",
+                R.raw.estudiar
+
+            ),
+            word(
+                "EXPLICAR",
+                R.raw.explicar
+
+            ),
+            word(
+                "HABLAR",
+                R.raw.hablar
+
+            ),
+            word(
+                "HACER",
+                R.raw.hacer
+
+            ),
+            word(
+                "JUGAR",
+                R.raw.jugar
+
+            ),
+            word(
+                "LIMPIAR",
+                R.raw.limpiar
+
+            ),
+            word(
+                "NECESITAR",
+                R.raw.necesitar
+
+            ),
+            word(
+                "OLVIDAR",
+                R.raw.olvidar
+
+            ),
+            word(
+                "PAGAR",
+                R.raw.pagar
+
+            ),
+            word(
+                "PENSAR",
+                R.raw.pensar
+
+            ),
+            word(
+                "PERDER",
+                R.raw.perder
+
+            ),
+            word(
+                "PLATICAR",
+                R.raw.platicar
+
+            ),
+            word(
+                "PODER",
+                R.raw.poder
+
+            ),
+            word(
+                "PREGUNTAR",
+                R.raw.preguntar
+
+            ),
+            word(
+                "SENTAR",
+                R.raw.sentar
+
+            ),
+            word(
+                "TERMINAR",
+                R.raw.terminar
+
+            ),
+            word(
+                "TRABAJAR",
+                R.raw.trabajar
+
+            ),
+            word(
+                "VENDER",
+                R.raw.vender
+
+            ),
+            word(
+                "VER",
+                R.raw.ver
+
+            ),
+            word(
+                "VIVIR",
+                R.raw.vivir
+
+            ),
+        ),
+        7,
+
         ),
     category(
-        "VERBOS NARRATIVOS",
+        "VERBOS",
         R.drawable.verbos,
         "#929292",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "VERBOS I",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CONOCER",
+                        R.raw.conocer
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "ENTENDER",
+                        R.raw.entender
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "GUSTAR",
+                        R.raw.gustar
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "HABER",
+                        R.raw.haber
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "NOCONOCER",
+                        R.raw.noconocer
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "VERBOS II",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "NOENTENDER",
+                        R.raw.noentender
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "NOGUSTAR",
+                        R.raw.nogustar
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "NOHABER",
+                        R.raw.nohaber
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "NOPODER",
+                        R.raw.nopoder
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "NOQUERER",
+                        R.raw.noquerer
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "VERBOS III",
+                "#929292",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "NOSABER",
+                        R.raw.nosaber
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "NOSERVIR",
+                        R.raw.noservir
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "PODER",
+                        R.raw.poder
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "QUERER",
+                        R.raw.querer
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "SABER",
+                        R.raw.saber
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "CONOCER",
+                R.raw.conocer
+
             ),
             word(
-                "B",
-                R.raw.b
+                "ENTENDER",
+                R.raw.entender
+
             ),
             word(
-                "C",
-                R.raw.c
+                "GUSTAR",
+                R.raw.gustar
+
             ),
             word(
-                "D",
-                R.raw.d
+                "HABER",
+                R.raw.haber
+
             ),
             word(
-                "E",
-                R.raw.e
+                "NOCONOCER",
+                R.raw.noconocer
+
             ),
             word(
-                "F",
-                R.raw.f
+                "NOENTENDER",
+                R.raw.noentender
+
             ),
             word(
-                "G",
-                R.raw.g
+                "NOGUSTAR",
+                R.raw.nogustar
+
             ),
             word(
-                "H",
-                R.raw.h
+                "NOHABER",
+                R.raw.nohaber
+
             ),
-        )
+            word(
+                "NOPODER",
+                R.raw.nopoder
+
+            ),
+            word(
+                "NOQUERER",
+                R.raw.noquerer
+
+            ),
+            word(
+                "NOSABER",
+                R.raw.nosaber
+
+            ),
+            word(
+                "NOSERVIR",
+                R.raw.noservir
+
+            ),
+            word(
+                "PODER",
+                R.raw.poder
+
+            ),
+            word(
+                "QUERER",
+                R.raw.querer
+
+            ),
+            word(
+                "SABER",
+                R.raw.saber
+
+            ),
+            word(
+                "SERVIR",
+                R.raw.servir
+
+            ),
+        ),
+        3,
+
         ),
     category(
         "VERDURAS",
         R.drawable.verduras,
         "#3CA99B",
+
         mutableListOf(
             subCategorias(
-                "ABC I",
-                "eea236",
+                "VERDURAS I",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "AGUACATE",
+                        R.raw.aguacate
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "AJO",
+                        R.raw.ajo
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "BETABEL",
+                        R.raw.betabel
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CALABACITA",
+                        R.raw.calabacita
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "CALABAZA",
+                        R.raw.calabaza
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC II",
-                "eea236",
+                "VERDURAS II",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "CAMOTE",
+                        R.raw.camote
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "CEBOLLA",
+                        R.raw.cebolla
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "CHICHARO",
+                        R.raw.chicharo
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "CHILE",
+                        R.raw.chile
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "ELOTE",
+                        R.raw.elote
+
                     ),
                 )
             ),
             subCategorias(
-                "ABC III",
-                "eea236",
+                "VERDURAS III",
+                "#3CA99B",
+
                 mutableListOf(
                     word(
-                        "A",
-                        R.raw.a
+                        "FRIJOL",
+                        R.raw.frijol
+
                     ),
                     word(
-                        "B",
-                        R.raw.b
+                        "HONGO",
+                        R.raw.hongo
+
                     ),
                     word(
-                        "C",
-                        R.raw.c
+                        "JITOMATE",
+                        R.raw.jitomate
+
                     ),
                     word(
-                        "D",
-                        R.raw.d
+                        "LECHUGA",
+                        R.raw.lechuga
+
                     ),
                     word(
-                        "E",
-                        R.raw.e
-                    ),
-                    word(
-                        "F",
-                        R.raw.f
-                    ),
-                    word(
-                        "G",
-                        R.raw.g
-                    ),
-                    word(
-                        "H",
-                        R.raw.h
+                        "NOPAL",
+                        R.raw.nopal
+
                     ),
                 )
             ),
         ),
         mutableListOf(
             word(
-                "A",
-                R.raw.a
+                "AGUACATE",
+                R.raw.aguacate
+
             ),
             word(
-                "B",
-                R.raw.b
+                "AJO",
+                R.raw.ajo
+
             ),
             word(
-                "C",
-                R.raw.c
+                "BETABEL",
+                R.raw.betabel
+
             ),
             word(
-                "D",
-                R.raw.d
+                "CALABACITA",
+                R.raw.calabacita
+
             ),
             word(
-                "E",
-                R.raw.e
+                "CALABAZA",
+                R.raw.calabaza
+
             ),
             word(
-                "F",
-                R.raw.f
+                "CAMOTE",
+                R.raw.camote
+
             ),
             word(
-                "G",
-                R.raw.g
+                "CEBOLLA",
+                R.raw.cebolla
+
             ),
             word(
-                "H",
-                R.raw.h
+                "CHICHARO",
+                R.raw.chicharo
+
             ),
-        )
+            word(
+                "CHILE",
+                R.raw.chile
+
+            ),
+            word(
+                "ELOTE",
+                R.raw.elote
+
+            ),
+            word(
+                "FRIJOL",
+                R.raw.frijol
+
+            ),
+            word(
+                "HONGO",
+                R.raw.hongo
+
+            ),
+            word(
+                "JITOMATE",
+                R.raw.jitomate
+
+            ),
+            word(
+                "LECHUGA",
+                R.raw.lechuga
+
+            ),
+            word(
+                "NOPAL",
+                R.raw.nopal
+
+            ),
+            word(
+                "PAPA",
+                R.raw.papa
+
+            ),
+            word(
+                "PEPINO",
+                R.raw.pepino
+
+            ),
+            word(
+                "ZANAHORIA",
+                R.raw.zanahoria
+
+            ),
+        ),
+        3,
+
+        ),
 )
-)
+

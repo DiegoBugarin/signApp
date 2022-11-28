@@ -8,6 +8,12 @@ import diego.estrada.deersign.databinding.ItemWordBinding
 
 class vocabularyAdapter (var context: Context, var data: List<word>, private val funcionX: (word) ->Unit) : RecyclerView.Adapter<vocabularyAdapter.ViewHolder>(){
 
+    var wordList = data
+    fun setFilteredList(filteredList: MutableList<word>){
+        wordList = filteredList
+        notifyDataSetChanged()
+    }
+
     class ViewHolder (val binding: ItemWordBinding, funcionZ: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root)  {
 
 
@@ -23,19 +29,19 @@ class vocabularyAdapter (var context: Context, var data: List<word>, private val
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemWordBinding.inflate(LayoutInflater.from(parent.context),parent,false)
         return ViewHolder(view) {
-            funcionX(data[it])
+            funcionX(wordList[it])
         }
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         holder.binding.apply {
-            textView.text = data[position].nombre
+            textView.text = wordList[position].nombre
         }
     }
 
     override fun getItemCount(): Int {
-        return data.size
+        return wordList.size
     }
 
 }

@@ -27,13 +27,13 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="helvetica"
-            android:hint="Correo"
             android:drawableLeft="@drawable/email"
             android:drawablePadding="8dp"
+            android:fontFamily="helvetica"
+            android:hint="Correo"
             android:textColor="#AAAAAA"
             android:textColorHint="#AAAAAA"
-            android:textSize="20sp"
+            android:textSize="17sp"
             android:textStyle="italic" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -57,14 +57,14 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="helvetica"
-            android:hint="Contraseña"
             android:drawableLeft="@drawable/password"
             android:drawablePadding="8dp"
+            android:fontFamily="helvetica"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
             android:textColor="#AAAAAA"
-            android:textSize="20sp"
-            android:textStyle="italic"
-            android:inputType="textPassword"/>
+            android:textSize="17sp"
+            android:textStyle="italic" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
