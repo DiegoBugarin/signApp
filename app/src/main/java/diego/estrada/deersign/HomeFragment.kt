@@ -43,11 +43,26 @@ class HomeFragment : Fragment() {
         // Inflate the layout for this fragment
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
 
-        if(user != null){
+        if(user?.isAnonymous == true){
+            dataBase.child("Guests").child("Users").child(user!!.uid).child("progreso").get().addOnSuccessListener {
+                if(it.value != null){
+                    val prog = it.value as Long
+                    if(prog.toInt() == 0){
+                        binding.progressBar2.progress = 0
+                    }
 
-            dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("avance").get().addOnSuccessListener {
+                    else{
+                        binding.progressBar2.progress = (prog as Long).toInt()
+                    }
+                }
+            }
+        }
+
+        else if(user != null){
+
+            dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("progreso").get().addOnSuccessListener {
                 val prog = it.value
-                //binding.progressBar2.progress = (prog as Long).toInt()
+                binding.progressBar2.progress = (prog as Long).toInt()
             }
         }
 

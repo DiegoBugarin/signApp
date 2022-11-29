@@ -39,16 +39,33 @@ class ProfileFragment : Fragment() {
         val editor = sharedPref?.edit()
         // Inflate the layout for this fragment
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
-        if(user != null){
 
-            dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("avance").get().addOnSuccessListener {
+        if(user?.isAnonymous == true){
+            dataBase.child("Guests").child("Users").child(user!!.uid).child("progreso").get().addOnSuccessListener {
+
+                if(it.value != null){
+                    val prog = it.value
+                    binding.progressBar.progress = (prog as Long).toInt()
+                }
+            }
+
+            dataBase.child("Guests").child("Users").child(user!!.uid).child("username").get().addOnSuccessListener {
+                if(it.value != null){
+                val username = it.value
+                binding.usuario.setText(username as String)
+                }
+            }
+        }
+        else if(user != null){
+
+            dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("progreso").get().addOnSuccessListener {
                 val prog = it.value
-                //binding.progressBar.progress = (prog as Long).toInt()
+                binding.progressBar.progress = (prog as Long).toInt()
             }
 
             dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("username").get().addOnSuccessListener {
                 val username = it.value
-                //binding.username.setText(username as String)
+                binding.usuario.setText(username as String)
             }
         }
 
@@ -64,12 +81,12 @@ class ProfileFragment : Fragment() {
         val editor = sharedPref?.edit()
 
         binding.btnExit.setOnClickListener{
-            if (editor != null) {
-                editor.putString("User", "")
-                editor.apply()
-            }
             mAuth.signOut()
             findNavController().navigate(R.id.action_profileFragment_to_loginFragment)
+        }
+
+        binding.btnEdit.setOnClickListener {
+            findNavController().navigate(R.id.action_profileFragment_to_editFragment)
         }
 
     }
