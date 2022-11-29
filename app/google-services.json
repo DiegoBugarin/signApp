@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "129696012214",
+    "firebase_url": "https://webdata-f6952-default-rtdb.firebaseio.com",
+    "project_id": "webdata-f6952",
+    "storage_bucket": "webdata-f6952.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129696012214:android:e37bfdd7a1d42ad1999317",
+        "android_client_info": {
+          "package_name": "diego.estrada.deersign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129696012214-o6dldfroc8stoq2pasau7c8edmpgdn8o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWt4FIvdMZ3D4j7kaRk0gZSZc8cVz78nk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129696012214-o6dldfroc8stoq2pasau7c8edmpgdn8o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
