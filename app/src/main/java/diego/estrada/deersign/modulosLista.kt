@@ -5,6 +5,8 @@ import android.graphics.Color
 import android.graphics.drawable.Icon
 import android.util.Log.*
 
+
+//Lista con las categorías, subcategorías y palabras
 var modulosLista = mutableListOf(
     category(
         "ABC",

@@ -10,16 +10,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentDictionaryBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [DictionaryFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+//Fragmento de diccionario
 class DictionaryFragment : Fragment() {
 
     private var _binding: FragmentDictionaryBinding?= null
@@ -37,13 +28,15 @@ class DictionaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Adaptador para desplegar las categorías en el RecyclerView mandando módulosLista
         val adaptercategoria = dictionaryAdapter(requireActivity(), modulosLista){
             val bundle = Bundle()
+            //Enviar la categoría seleccionada en caso de darle click y enviar al apartado de vocabulario
             bundle.putParcelable("categoria",it)
             Navigation.findNavController(view).navigate(R.id.action_dictionaryFragment_to_vocabularyFragment,bundle)
         }
 
-
+        //Asignar el adaptador de adaptercategoria en el RecyclerView
         binding.rvmodulos.adapter = adaptercategoria
         binding.rvmodulos.layoutManager = GridLayoutManager(requireActivity(), 2, RecyclerView.VERTICAL, false)
     }

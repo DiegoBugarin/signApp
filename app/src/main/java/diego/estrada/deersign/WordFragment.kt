@@ -13,15 +13,7 @@ import androidx.core.view.isVisible
 import androidx.navigation.Navigation
 import diego.estrada.deersign.databinding.FragmentWordBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-
-
-/**
- * A simple [Fragment] subclass.
- * Use the [WordFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+//Fragmento de palabra
 class WordFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var _binding: FragmentWordBinding? = null
@@ -39,25 +31,23 @@ class WordFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //mediaController para le video
         val mediaController = MediaController(context)
         mediaController.setAnchorView(binding.videoView)
 
-
-
-        // val packageName = requireContext().packageName
-
-
-
         arguments?.let {
-            val palabra = it.get("palabra") as word
-            val categoria = it.get("categoria") as category
-            val video_id = palabra.source_path
+            val palabra = it.get("palabra") as word //Extraer la palabra del bundle
+            val categoria = it.get("categoria") as category //Extraer la categoría del bundle
+            val video_id = palabra.source_path //Obtener el origen del video de la palabra
 
+            //Asignar el color y texto del toolbar al de la categoría
             binding.toolbar.setBackgroundColor(Color.parseColor(categoria.color))
             binding.toolbarTextView.setText(categoria.nombre)
 
+            //Si el origen del video no es vacío
             if(video_id != null) {
 
+                //Reproducir el video en loop
                 val offlineUrl =
                     Uri.parse("android.resource://${requireContext().packageName}/${video_id}")
                 binding.textView9.text = palabra.nombre
@@ -68,7 +58,10 @@ class WordFragment : Fragment() {
                 binding.videoView.setOnPreparedListener { it.isLooping = true }
 
             }
+
+            //En caso de que el enlace esté vacío
             else {
+                //Desplegar que el video no está disponible
                 binding.videoView.isVisible = false
 
                 Toast.makeText(context,"VIDEO NO DISPONIBLE", Toast.LENGTH_SHORT).show()
@@ -76,7 +69,9 @@ class WordFragment : Fragment() {
             }
 
             val bundle = Bundle()
+            //Poner en bundle la categoría
             bundle.putParcelable("categoria",categoria)
+            //Botón para regresar al fragmento de vocabulario
             binding.backBtn.setOnClickListener {
                 Navigation.findNavController(view).navigate(R.id.action_wordFragment_to_vocabularyFragment,bundle)
             }

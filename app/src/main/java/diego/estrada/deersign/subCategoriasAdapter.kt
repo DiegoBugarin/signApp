@@ -17,11 +17,14 @@ import diego.estrada.deersign.databinding.ItemSubCategoriaBinding
 import diego.estrada.deersign.databinding.ItemWordBinding
 import java.util.Locale.Category
 
+//Adaptador para desplegar las subcategorías
 class subCategoriasAdapter(var context: Context, var cat: category, var data: List<subCategorias>, val funcionX: (subCategorias) ->Unit) : RecyclerView.Adapter<subCategoriasAdapter.ViewHolder>() {
+    //cat: Categoría seleccionada
+    //data: Lista de subcategorías de la categoría
 
-    val dataBase = FirebaseDatabase.getInstance().getReference()
-    val mAuth = FirebaseAuth.getInstance()
-    var user = mAuth.currentUser;
+    val dataBase = FirebaseDatabase.getInstance().getReference() //Referencia a la base de datos
+    val mAuth = FirebaseAuth.getInstance() //Instancia de la autentificación
+    var user = mAuth.currentUser; //Usuario logeado
 
     lateinit var subCat: subCategorias
     class ViewHolder (val binding: ItemSubCategoriaBinding, funcionZ: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root)  {
@@ -44,17 +47,21 @@ class subCategoriasAdapter(var context: Context, var cat: category, var data: Li
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
         Log.i("name", data[position].nombre)
+        //Actualizar los valores del nombre, ícono y color de la subcategoría
         holder.binding.apply {
             imageView.setImageResource(cat.icono)
             textView.setText(data[position].nombre)
             root.setCardBackgroundColor(Color.parseColor(cat.color))
         }
 
+        //El usuario es invitado
         if(user?.isAnonymous == true){
+            //Revisar si el usuario completó la subcategoría en la base de datos
             dataBase.child("Guests").child("Categorias").child(cat.nombre).child(data[position].nombre).child(
                 user!!.uid).get().addOnSuccessListener {
                 if(it.value != null){
                     val complete = it.value
+                    //Si la subcategoría ya se completó, desplegar la palomita
                     if(complete as Boolean){
                         holder.binding.imageView3.visibility = View.VISIBLE
                     }
@@ -63,10 +70,13 @@ class subCategoriasAdapter(var context: Context, var cat: category, var data: Li
             }
         }
 
+        //El usuario es de la institución
         else if(user != null){
+            //Saber si la subcategoría ya la completó
             dataBase.child("John Deere").child("Categorias").child(cat.nombre).child(data[position].nombre).child(
                 user!!.uid).get().addOnSuccessListener {
                     val complete = it.value
+                //Si ya la completó desplegar la palomita
                     if(complete as Boolean){
                         holder.binding.imageView3.visibility = View.VISIBLE
                     }
@@ -75,38 +85,11 @@ class subCategoriasAdapter(var context: Context, var cat: category, var data: Li
 
     }
 
+    //Obtener el tamaño de la lista de subcategorías
     override fun getItemCount(): Int {
         return data.size
     }
 
 }
-/*
-class subCategoriasAdapter(var data:List<subCategorias>, var cat: category) : RecyclerView.Adapter<subCategoriasAdapter.ViewHolder>() {
 
-    lateinit var context: Context
-    class ViewHolder(val binding: ItemSubCategoriaBinding) : RecyclerView.ViewHolder(binding.root){
-
-    }
-
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = ItemSubCategoriaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        context = parent.context
-        return ViewHolder(view)
-    }
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
-        holder.binding.apply {
-            imageView.setImageResource(cat.icono)
-            textView.text = data[position].nombre
-            root.setCardBackgroundColor(Color.parseColor(data[position].color))
-        }
-
-    }
-
-    override fun getItemCount(): Int {
-        return data.size
-    }
-
-}*/
 

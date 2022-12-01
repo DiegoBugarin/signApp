@@ -20,22 +20,13 @@ import com.google.firebase.database.FirebaseDatabase
 import diego.estrada.deersign.databinding.FragmentHomeBinding
 import diego.estrada.deersign.databinding.FragmentLoginBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [LoginFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+//Fragmento para ingresar a la aplicación
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding?= null
     private val binding get() = _binding!!
-    val dataBase = FirebaseDatabase.getInstance().getReference()
-    val mAuth = FirebaseAuth.getInstance()
-    var user = mAuth.currentUser;
+    val dataBase = FirebaseDatabase.getInstance().getReference() //Referencia a la base de datos
+    val mAuth = FirebaseAuth.getInstance() //Instancia para la autentificación
+    var user = mAuth.currentUser; //Usuario logeado
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -52,6 +43,7 @@ class LoginFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //En caso de tener un usuario logeado, ir directamente a Home
         if (user != null) {
             Log.i("Login", "Conectado")
             findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
@@ -61,15 +53,21 @@ class LoginFragment : Fragment() {
             // No user is signed in.
         }
 
+        //Botón para ingresar a la aplicación
         binding.buttonEntrar.setOnClickListener{
             Log.i("correo", binding.email.editText?.text.toString())
+
+            //Checar que el correo y contraseña no estén vacíos
             if(binding.email.editText?.text.toString().isNotEmpty() && binding.password.editText?.text.toString().isNotEmpty()){
+                //Ingresar con correo y contraseña a FireBase
                 mAuth.signInWithEmailAndPassword(binding.email.editText?.text.toString(), binding.password.editText?.text.toString()).addOnCompleteListener {
+                    //Si se pudo ingresar mandar a la pantalla de Home
                     if(it.isSuccessful){
                         findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
                         user?.let { it1 -> Log.i("UserUid", it1.uid) }
                     }
 
+                    //Mostrar  alerta de error en el login
                     else{
                         showAlert()
                     }
@@ -77,15 +75,21 @@ class LoginFragment : Fragment() {
             }
         }
 
+        //Botón para ingresar como invitado
         binding.buttonGuest.setOnClickListener{
-            mAuth.signInAnonymously().addOnCompleteListener {
 
+            //Ingreso como anónimo en FireBase
+            mAuth.signInAnonymously().addOnCompleteListener {
+                //En caso de realizarse con éxito
                 if(it.isSuccessful){
+                    //Agregar la info del usuario en la base de datos de invitados
                     addGuest()
                     Log.i("Guest", user?.isAnonymous.toString())
                     user?.let { it1 -> Log.i("Guest", it1.uid) }
+                    //Ir a la pantalla de inicio
                     findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
                 }
+                //Desplegar mensaje que no se realizó con éxito
                 else{
                     showGuestAlert()
                 }
@@ -93,6 +97,7 @@ class LoginFragment : Fragment() {
         }
     }
 
+    //Alerta de login sin éxito
     fun showAlert(){
         val builder = AlertDialog.Builder(context)
         builder.setTitle("Error")
@@ -102,6 +107,7 @@ class LoginFragment : Fragment() {
         dialog.show()
     }
 
+    //Alerta de login con éxito
     private fun showGuestAlert(){
         val builder = AlertDialog.Builder(context)
         builder.setTitle("Error")
@@ -111,6 +117,7 @@ class LoginFragment : Fragment() {
         dialog.show()
     }
 
+    //Comandos para agregar un invitado a la base de datos
     private fun addGuest(){
         val guest = Guest("Guest", 0, "Guest")
         user?.let { Log.i("UserID add Guest", it.uid) }

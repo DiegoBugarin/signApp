@@ -31,7 +31,7 @@ class dictionaryAdapter(var context: Context, var data:List<category>,private va
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-
+        //Agregar el nombre, ícono y color al apartado de la categoría
         holder.binding.apply {
             imageView.setImageResource(data[position].icono)
             textView.text = data[position].nombre
@@ -39,7 +39,7 @@ class dictionaryAdapter(var context: Context, var data:List<category>,private va
         }
     }
 
-
+    //Tamaño de la lista de categorías
     override fun getItemCount(): Int {
         return data.size
     }

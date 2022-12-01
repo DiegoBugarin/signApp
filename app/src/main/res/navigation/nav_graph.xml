@@ -33,15 +33,6 @@
             app:destination="@id/vocabularyFragment" />
     </fragment>
     <fragment
-        android:id="@+id/splahFragment"
-        android:name="diego.estrada.deersign.SplahFragment"
-        android:label="fragment_splah"
-        tools:layout="@layout/fragment_splah" >
-        <action
-            android:id="@+id/action_splahFragment_to_loginFragment"
-            app:destination="@id/loginFragment" />
-    </fragment>
-    <fragment
         android:id="@+id/loginFragment"
         android:name="diego.estrada.deersign.LoginFragment"
         android:label="fragment_login"

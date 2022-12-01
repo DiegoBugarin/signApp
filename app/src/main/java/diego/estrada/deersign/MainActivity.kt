@@ -22,23 +22,23 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        //binding = ActivityMainBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
 
+        //Agregar barra de navegación
         val bottomNavView = findViewById<BottomNavigationView>(R.id.btmNavView)
 
+        //Controlador de navegación para los fragments
         val navController = findNavController(R.id.fragmentContainerView)
-
-        /*val bottomNavView = binding.btmNavView
-        val navController = findNavController(R.id.fragmentContainerView)*/
-
         bottomNavView.setupWithNavController(navController)
 
+        //Identificar el cambio de destino de fragment
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if((destination.id == R.id.loginFragment) || (destination.id == R.id.vocabularyFragment) || (destination.id == R.id.wordFragment) || (destination.id == R.id.quizFragment) || (destination.id == R.id.editFragment) || (destination.id == R.id.passwordFragment) || (destination.id == R.id.subCategoriesFragment)) {
 
+            //Ocultar la barra de navegación en los fragmentos del if
+            if((destination.id == R.id.loginFragment) || (destination.id == R.id.vocabularyFragment) || (destination.id == R.id.wordFragment) || (destination.id == R.id.quizFragment) || (destination.id == R.id.editFragment) || (destination.id == R.id.passwordFragment) || (destination.id == R.id.subCategoriesFragment)) {
                 bottomNavView.visibility = View.GONE
-            } else {
+            }
+            //Hacer visible la barra de navegación
+            else {
 
                 bottomNavView.visibility = View.VISIBLE
             }

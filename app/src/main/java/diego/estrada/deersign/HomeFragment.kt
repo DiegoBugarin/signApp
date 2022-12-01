@@ -17,16 +17,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
 import diego.estrada.deersign.databinding.FragmentHomeBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+//Fragmento de los módulos de aprendizaje (Home Fragment)
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding ?= null
     private val binding get() = _binding!!

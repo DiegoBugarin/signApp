@@ -12,16 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import diego.estrada.deersign.databinding.FragmentHomeBinding
 import diego.estrada.deersign.databinding.FragmentSubCategoriesBinding
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [SubCategoriesFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class SubCategoriesFragment : Fragment() {
     private var _binding: FragmentSubCategoriesBinding? = null
     private val binding get() = _binding!!
@@ -39,23 +29,34 @@ class SubCategoriesFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         arguments?.let {
+            //Obtener la categoría seleccionada del bundle
             val categoria = it.get("categoria") as category
+
+            //Actualizar el color del toolbar y el texto al de la categoría
             binding.toolbar.setBackgroundColor(Color.parseColor(categoria.color))
             binding.toolbarTextView.setText(categoria.nombre)
 
+            //Asignar el adaptador de la subcategoría
             val subCatAdapter =
                 subCategoriasAdapter(requireActivity(), categoria, categoria.subcat) {
                     val bundle = Bundle()
-                    bundle.putParcelable("categoria", categoria)
-                    bundle.putParcelable("subCat", it)
+                    bundle.putParcelable("categoria", categoria) //Poner en bundle la categoría
+                    bundle.putParcelable("subCat", it) //Poner en bundle la subcategoría seleccionada
+                    //Navegar al fragmento de quiz
                     Navigation.findNavController(view)
                         .navigate(R.id.action_subCategoriesFragment_to_quizFragment, bundle)
                 }
+
+            //Botón para regresar al fragmento de Home
             binding.backBtn.setOnClickListener {
                 Navigation.findNavController(view)
                     .navigate(R.id.action_subCategoriesFragment_to_homeFragment)
             }
+
+            //Asignar el adaptador en el recyclerview
             binding.rvsubcat.adapter = subCatAdapter
+
+            //Crear el grid de una columna
             binding.rvsubcat.layoutManager =
                 GridLayoutManager(requireActivity(), 1, RecyclerView.VERTICAL, false)
         }
