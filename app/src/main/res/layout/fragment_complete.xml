@@ -39,7 +39,7 @@
         android:layout_height="85dp"
         android:layout_marginTop="16dp"
         android:letterSpacing="0.1"
-        android:text="HAS COMPLETADO COLORES III"
+        android:text="HAS COMPLETADO EL QUIZ"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="25sp"

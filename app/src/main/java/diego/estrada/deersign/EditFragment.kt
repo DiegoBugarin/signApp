@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
@@ -44,8 +45,10 @@ class EditFragment : Fragment() {
 
         if(user?.isAnonymous == true){
             dataBase.child("Guests").child("Users").child(user!!.uid).child("username").get().addOnSuccessListener {
-                username = it.value as String
-                binding.usuario.setText(username)
+                if(it.value != null){
+                    username = it.value as String
+                    binding.usuario.setText(username)
+                }
             }
             binding.empresa.setText("Guest")
             binding.empresa.setText("Guest")
@@ -75,6 +78,8 @@ class EditFragment : Fragment() {
             else if(user != null) {
                 dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("username").setValue(username)
             }
+
+            Toast.makeText(context, "Usuario actualizado", Toast.LENGTH_LONG).show()
 
         }
     }

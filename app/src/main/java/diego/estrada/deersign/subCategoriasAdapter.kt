@@ -53,10 +53,13 @@ class subCategoriasAdapter(var context: Context, var cat: category, var data: Li
         if(user?.isAnonymous == true){
             dataBase.child("Guests").child("Categorias").child(cat.nombre).child(data[position].nombre).child(
                 user!!.uid).get().addOnSuccessListener {
-                val complete = it.value
-                if(complete as Boolean){
-                    holder.binding.imageView3.visibility = View.VISIBLE
+                if(it.value != null){
+                    val complete = it.value
+                    if(complete as Boolean){
+                        holder.binding.imageView3.visibility = View.VISIBLE
+                    }
                 }
+
             }
         }
 

@@ -67,6 +67,9 @@
         <action
             android:id="@+id/action_profileFragment_to_editFragment"
             app:destination="@id/editFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_passwordFragment"
+            app:destination="@id/passwordFragment" />
     </fragment>
     <fragment
         android:id="@+id/subCategoriesFragment"
@@ -126,6 +129,15 @@
         tools:layout="@layout/fragment_edit" >
         <action
             android:id="@+id/action_editFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/passwordFragment"
+        android:name="diego.estrada.deersign.PasswordFragment"
+        android:label="fragment_password"
+        tools:layout="@layout/fragment_password" >
+        <action
+            android:id="@+id/action_passwordFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
 </navigation>

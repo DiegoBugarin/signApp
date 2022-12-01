@@ -7,7 +7,6 @@ class User(snapshot: DataSnapshot){
     lateinit var companyArea: String
     lateinit var correo: String
     lateinit var nombre: String
-    lateinit var password: String
     var progreso: Long = 0
     lateinit var userN: String
 
@@ -17,7 +16,6 @@ class User(snapshot: DataSnapshot){
             companyArea = data["area"] as String
             correo = data["email"] as String
             nombre = data["nombre"] as String
-            password = data["password"] as String
             progreso = data["progreso"] as Long
             userN = data["username"] as String
         }

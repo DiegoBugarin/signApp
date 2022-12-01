@@ -8,10 +8,14 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import diego.estrada.deersign.databinding.ItemCategoriaBinding
 
+//Adaptador de diccionario para desplegar las categorías en el RecyclerView
 class dictionaryAdapter(var context: Context, var data:List<category>,private val funcionX: (category) ->Unit) : RecyclerView.Adapter<dictionaryAdapter.ViewHolder>() {
+    //context: Contexto del fragmento
+    //data: La lista de categorías a desplegar
 
     class ViewHolder(val binding: ItemCategoriaBinding, funcionZ: (Int) -> Unit) : RecyclerView.ViewHolder(binding.root){
         init {
+            //Permitir el click sobre la categoría y enviar su posición (qué categoría es)
             itemView.setOnClickListener {
                 funcionZ(adapterPosition)
             }
@@ -20,6 +24,7 @@ class dictionaryAdapter(var context: Context, var data:List<category>,private va
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = ItemCategoriaBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        //Mandar la información de la categoría [it]
         return ViewHolder(view) {
             funcionX(data[it])
         }

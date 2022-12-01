@@ -37,49 +37,9 @@ class VocabularyFragment : Fragment() {
 
         wordList = ArrayList<word>().toMutableList()
         // Inflate the layout for this fragment
-        binding.searchView.clearFocus()
         return binding.root
     }
 
-
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        super.onCreateOptionsMenu(menu, inflater)
-
-        inflater.inflate(R.menu.search_menu, menu)
-        val searchItem: MenuItem = menu.findItem(R.id.actionSearch)
-        val searchView: SearchView = searchItem.getActionView() as SearchView
-
-        binding.searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
-            override fun onQueryTextSubmit(p0: String?): Boolean {
-                Log.i("Search", "ha")
-                return false
-            }
-
-            override fun onQueryTextChange(msg: String): Boolean {
-                // inside on query text change method we are
-                // calling a method to filter our recycler view.
-                Log.i("Search", msg)
-                filterList(msg)
-                return false
-            }
-        })
-    }
-
-    private fun filterList(text: String) {
-        var filteredList: MutableList<word> = emptyList<word>().toMutableList()
-        for(item: word in wordList){
-            if(item.nombre.lowercase().contains(text.lowercase())){
-                filteredList.add(item)
-            }
-        }
-
-        if(filteredList.isEmpty()){
-            Toast.makeText(context, "No se encontraron resultados", Toast.LENGTH_SHORT).show()
-        }
-        else{
-            vocbularyRVAdapter.setFilteredList(filteredList)
-        }
-    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

@@ -41,6 +41,7 @@ class LoginFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login, container, false)
         _binding = FragmentLoginBinding.inflate(inflater, container, false)
@@ -53,6 +54,7 @@ class LoginFragment : Fragment() {
 
         if (user != null) {
             Log.i("Login", "Conectado")
+            findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
             // User is signed in.
         } else {
             Log.i("Login,", "No User")
@@ -65,6 +67,7 @@ class LoginFragment : Fragment() {
                 mAuth.signInWithEmailAndPassword(binding.email.editText?.text.toString(), binding.password.editText?.text.toString()).addOnCompleteListener {
                     if(it.isSuccessful){
                         findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
+                        user?.let { it1 -> Log.i("UserUid", it1.uid) }
                     }
 
                     else{
@@ -76,8 +79,11 @@ class LoginFragment : Fragment() {
 
         binding.buttonGuest.setOnClickListener{
             mAuth.signInAnonymously().addOnCompleteListener {
+
                 if(it.isSuccessful){
-                    addGuest();
+                    addGuest()
+                    Log.i("Guest", user?.isAnonymous.toString())
+                    user?.let { it1 -> Log.i("Guest", it1.uid) }
                     findNavController().navigate(R.id.action_loginFragment_to_homeFragment2)
                 }
                 else{
@@ -87,7 +93,7 @@ class LoginFragment : Fragment() {
         }
     }
 
-    private fun showAlert(){
+    fun showAlert(){
         val builder = AlertDialog.Builder(context)
         builder.setTitle("Error")
         builder.setMessage("Verifique que el correo y contraseña sean correctos.")
@@ -106,7 +112,8 @@ class LoginFragment : Fragment() {
     }
 
     private fun addGuest(){
-        val guest = Guest("Diego", 0, "Diego")
+        val guest = Guest("Guest", 0, "Guest")
+        user?.let { Log.i("UserID add Guest", it.uid) }
         user?.let {
             dataBase.child("Guests").child("Users").child(user!!.uid).setValue(guest)
             dataBase.child("Guests").child("Categorias").child("ABC").child("ABC I").child(user!!.uid).setValue(false);

@@ -149,6 +149,7 @@ class QuizFragment : Fragment() {
                 user?.let {
                     dataBase.child("Guests").child("Categorias").child(cat.nombre).child(subCat.nombre).child(
                         it.uid).get().addOnSuccessListener {
+
                         val complete = it.value as Boolean
                         if(!complete){
                             addGuestValues()
@@ -156,7 +157,7 @@ class QuizFragment : Fragment() {
                     }
                 }
 
-                user?.let { dataBase.child("Guests").child("Users").child(it.uid).child("Progreso").setValue(ServerValue.increment(1)) }
+                user?.let { dataBase.child("Guests").child("Users").child(it.uid).child("progreso").setValue(ServerValue.increment(1)) }
             }
 
             else if(user != null){
@@ -192,6 +193,11 @@ class QuizFragment : Fragment() {
                 ServerValue.increment(1))
         }
 
+        user?.let {
+            dataBase.child("John Deere").child("Empleados").child(user!!.uid).child("progreso").setValue(
+                ServerValue.increment(1))
+        }
+
     }
 
     private fun addGuestValues() {
@@ -202,7 +208,7 @@ class QuizFragment : Fragment() {
 
 
         user?.let {
-            dataBase.child("Guests").child("Categorias").child(cat.nombre).child("progress").child(
+            dataBase.child("Guests").child("Categorias").child(cat.nombre).child("progreso").child(
                 it.uid).setValue(
                 ServerValue.increment(1))
         }

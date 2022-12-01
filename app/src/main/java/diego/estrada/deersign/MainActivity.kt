@@ -35,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         bottomNavView.setupWithNavController(navController)
 
         navController.addOnDestinationChangedListener { _, destination, _ ->
-            if((destination.id == R.id.loginFragment) || (destination.id == R.id.vocabularyFragment) || (destination.id == R.id.wordFragment) || (destination.id == R.id.quizFragment) || (destination.id == R.id.editFragment)) {
+            if((destination.id == R.id.loginFragment) || (destination.id == R.id.vocabularyFragment) || (destination.id == R.id.wordFragment) || (destination.id == R.id.quizFragment) || (destination.id == R.id.editFragment) || (destination.id == R.id.passwordFragment) || (destination.id == R.id.subCategoriesFragment)) {
 
                 bottomNavView.visibility = View.GONE
             } else {

@@ -60,9 +60,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvsubcat"
-        android:layout_width="372dp"
-        android:layout_height="500dp"
+        android:layout_width="368dp"
+        android:layout_height="531dp"
         android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView8"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
